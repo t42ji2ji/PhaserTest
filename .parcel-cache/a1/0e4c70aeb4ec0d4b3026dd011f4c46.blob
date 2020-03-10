@@ -1,0 +1,18 @@
+var $c1aa03d481a92af3c2a688c119$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Math.Fuzzy
+ */
+$c1aa03d481a92af3c2a688c119$exports = {
+  Ceil: $parcel$require("475908c1aa03d481a92af3c2a688c119", "./Ceil"),
+  Equal: $parcel$require("475908c1aa03d481a92af3c2a688c119", "./Equal"),
+  Floor: $parcel$require("475908c1aa03d481a92af3c2a688c119", "./Floor"),
+  GreaterThan: $parcel$require("475908c1aa03d481a92af3c2a688c119", "./GreaterThan"),
+  LessThan: $parcel$require("475908c1aa03d481a92af3c2a688c119", "./LessThan")
+};

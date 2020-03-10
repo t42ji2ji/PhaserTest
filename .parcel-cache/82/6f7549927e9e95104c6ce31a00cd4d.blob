@@ -1,0 +1,20 @@
+var $a4bd1b15c8dddcef49c3c8190a6c299c$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Curves
+ */
+$a4bd1b15c8dddcef49c3c8190a6c299c$exports = {
+  Path: $parcel$require("a4bd1b15c8dddcef49c3c8190a6c299c", "./path/Path"),
+  CubicBezier: $parcel$require("a4bd1b15c8dddcef49c3c8190a6c299c", "./CubicBezierCurve"),
+  Curve: $parcel$require("a4bd1b15c8dddcef49c3c8190a6c299c", "./Curve"),
+  Ellipse: $parcel$require("a4bd1b15c8dddcef49c3c8190a6c299c", "./EllipseCurve"),
+  Line: $parcel$require("a4bd1b15c8dddcef49c3c8190a6c299c", "./LineCurve"),
+  QuadraticBezier: $parcel$require("a4bd1b15c8dddcef49c3c8190a6c299c", "./QuadraticBezierCurve"),
+  Spline: $parcel$require("a4bd1b15c8dddcef49c3c8190a6c299c", "./SplineCurve")
+};

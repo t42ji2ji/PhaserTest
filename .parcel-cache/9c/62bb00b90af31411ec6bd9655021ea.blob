@@ -1,0 +1,18 @@
+var $d385903c19f1acb6e60362535810d80$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $d385903c19f1acb6e60362535810d80$var$Polygon = $parcel$require("6d385903c19f1acb6e60362535810d80", "./Polygon");
+$d385903c19f1acb6e60362535810d80$var$Polygon.Clone = $parcel$require("6d385903c19f1acb6e60362535810d80", "./Clone");
+$d385903c19f1acb6e60362535810d80$var$Polygon.Contains = $parcel$require("6d385903c19f1acb6e60362535810d80", "./Contains");
+$d385903c19f1acb6e60362535810d80$var$Polygon.ContainsPoint = $parcel$require("6d385903c19f1acb6e60362535810d80", "./ContainsPoint");
+$d385903c19f1acb6e60362535810d80$var$Polygon.GetAABB = $parcel$require("6d385903c19f1acb6e60362535810d80", "./GetAABB");
+$d385903c19f1acb6e60362535810d80$var$Polygon.GetNumberArray = $parcel$require("6d385903c19f1acb6e60362535810d80", "./GetNumberArray");
+$d385903c19f1acb6e60362535810d80$var$Polygon.GetPoints = $parcel$require("6d385903c19f1acb6e60362535810d80", "./GetPoints");
+$d385903c19f1acb6e60362535810d80$var$Polygon.Perimeter = $parcel$require("6d385903c19f1acb6e60362535810d80", "./Perimeter");
+$d385903c19f1acb6e60362535810d80$var$Polygon.Reverse = $parcel$require("6d385903c19f1acb6e60362535810d80", "./Reverse");
+$d385903c19f1acb6e60362535810d80$var$Polygon.Smooth = $parcel$require("6d385903c19f1acb6e60362535810d80", "./Smooth");
+$d385903c19f1acb6e60362535810d80$exports = $d385903c19f1acb6e60362535810d80$var$Polygon;

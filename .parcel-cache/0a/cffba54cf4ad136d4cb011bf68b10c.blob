@@ -1,0 +1,36 @@
+var $c58c9a634054c10f91fe19107$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Sound.Events
+ */
+$c58c9a634054c10f91fe19107$exports = {
+  COMPLETE: $parcel$require("1788384c58c9a634054c10f91fe19107", "./COMPLETE_EVENT"),
+  DECODED: $parcel$require("1788384c58c9a634054c10f91fe19107", "./DECODED_EVENT"),
+  DECODED_ALL: $parcel$require("1788384c58c9a634054c10f91fe19107", "./DECODED_ALL_EVENT"),
+  DESTROY: $parcel$require("1788384c58c9a634054c10f91fe19107", "./DESTROY_EVENT"),
+  DETUNE: $parcel$require("1788384c58c9a634054c10f91fe19107", "./DETUNE_EVENT"),
+  GLOBAL_DETUNE: $parcel$require("1788384c58c9a634054c10f91fe19107", "./GLOBAL_DETUNE_EVENT"),
+  GLOBAL_MUTE: $parcel$require("1788384c58c9a634054c10f91fe19107", "./GLOBAL_MUTE_EVENT"),
+  GLOBAL_RATE: $parcel$require("1788384c58c9a634054c10f91fe19107", "./GLOBAL_RATE_EVENT"),
+  GLOBAL_VOLUME: $parcel$require("1788384c58c9a634054c10f91fe19107", "./GLOBAL_VOLUME_EVENT"),
+  LOOP: $parcel$require("1788384c58c9a634054c10f91fe19107", "./LOOP_EVENT"),
+  LOOPED: $parcel$require("1788384c58c9a634054c10f91fe19107", "./LOOPED_EVENT"),
+  MUTE: $parcel$require("1788384c58c9a634054c10f91fe19107", "./MUTE_EVENT"),
+  PAUSE_ALL: $parcel$require("1788384c58c9a634054c10f91fe19107", "./PAUSE_ALL_EVENT"),
+  PAUSE: $parcel$require("1788384c58c9a634054c10f91fe19107", "./PAUSE_EVENT"),
+  PLAY: $parcel$require("1788384c58c9a634054c10f91fe19107", "./PLAY_EVENT"),
+  RATE: $parcel$require("1788384c58c9a634054c10f91fe19107", "./RATE_EVENT"),
+  RESUME_ALL: $parcel$require("1788384c58c9a634054c10f91fe19107", "./RESUME_ALL_EVENT"),
+  RESUME: $parcel$require("1788384c58c9a634054c10f91fe19107", "./RESUME_EVENT"),
+  SEEK: $parcel$require("1788384c58c9a634054c10f91fe19107", "./SEEK_EVENT"),
+  STOP_ALL: $parcel$require("1788384c58c9a634054c10f91fe19107", "./STOP_ALL_EVENT"),
+  STOP: $parcel$require("1788384c58c9a634054c10f91fe19107", "./STOP_EVENT"),
+  UNLOCKED: $parcel$require("1788384c58c9a634054c10f91fe19107", "./UNLOCKED_EVENT"),
+  VOLUME: $parcel$require("1788384c58c9a634054c10f91fe19107", "./VOLUME_EVENT")
+};

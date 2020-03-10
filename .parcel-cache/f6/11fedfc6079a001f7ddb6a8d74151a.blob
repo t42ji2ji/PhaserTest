@@ -1,0 +1,84 @@
+var $fdb3284d9594f7cba4196e5aab827ce$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $fdb3284d9594f7cba4196e5aab827ce$var$BaseSoundManager = $parcel$require("3fdb3284d9594f7cba4196e5aab827ce", "../BaseSoundManager");
+var $fdb3284d9594f7cba4196e5aab827ce$var$Class = $parcel$require("3fdb3284d9594f7cba4196e5aab827ce", "../../utils/Class");
+var $fdb3284d9594f7cba4196e5aab827ce$var$EventEmitter = $parcel$require("3fdb3284d9594f7cba4196e5aab827ce", "eventemitter3");
+var $fdb3284d9594f7cba4196e5aab827ce$var$NoAudioSound = $parcel$require("3fdb3284d9594f7cba4196e5aab827ce", "./NoAudioSound");
+var $fdb3284d9594f7cba4196e5aab827ce$var$NOOP = $parcel$require("3fdb3284d9594f7cba4196e5aab827ce", "../../utils/NOOP");
+/**
+ * @classdesc
+ * No audio implementation of the sound manager. It is used if audio has been
+ * disabled in the game config or the device doesn't support any audio.
+ *
+ * It represents a graceful degradation of sound manager logic that provides
+ * minimal functionality and prevents Phaser projects that use audio from
+ * breaking on devices that don't support any audio playback technologies.
+ *
+ * @class NoAudioSoundManager
+ * @extends Phaser.Sound.BaseSoundManager
+ * @memberof Phaser.Sound
+ * @constructor
+ * @since 3.0.0
+ *
+ * @param {Phaser.Game} game - Reference to the current game instance.
+ */
+
+var $fdb3284d9594f7cba4196e5aab827ce$var$NoAudioSoundManager = new $fdb3284d9594f7cba4196e5aab827ce$var$Class({
+  Extends: $fdb3284d9594f7cba4196e5aab827ce$var$EventEmitter,
+  initialize: function NoAudioSoundManager(game) {
+    $fdb3284d9594f7cba4196e5aab827ce$var$EventEmitter.call(this);
+    this.game = game;
+    this.sounds = [];
+    this.mute = false;
+    this.volume = 1;
+    this.rate = 1;
+    this.detune = 0;
+    this.pauseOnBlur = true;
+    this.locked = false;
+  },
+  add: function (key, config) {
+    var sound = new $fdb3284d9594f7cba4196e5aab827ce$var$NoAudioSound(this, key, config);
+    this.sounds.push(sound);
+    return sound;
+  },
+  addAudioSprite: function (key, config) {
+    var sound = this.add(key, config);
+    sound.spritemap = {};
+    return sound;
+  },
+  // eslint-disable-next-line no-unused-vars
+  play: function (key, extra) {
+    return false;
+  },
+  // eslint-disable-next-line no-unused-vars
+  playAudioSprite: function (key, spriteName, config) {
+    return false;
+  },
+  remove: function (sound) {
+    return $fdb3284d9594f7cba4196e5aab827ce$var$BaseSoundManager.prototype.remove.call(this, sound);
+  },
+  removeByKey: function (key) {
+    return $fdb3284d9594f7cba4196e5aab827ce$var$BaseSoundManager.prototype.removeByKey.call(this, key);
+  },
+  pauseAll: $fdb3284d9594f7cba4196e5aab827ce$var$NOOP,
+  resumeAll: $fdb3284d9594f7cba4196e5aab827ce$var$NOOP,
+  stopAll: $fdb3284d9594f7cba4196e5aab827ce$var$NOOP,
+  update: $fdb3284d9594f7cba4196e5aab827ce$var$NOOP,
+  setRate: $fdb3284d9594f7cba4196e5aab827ce$var$NOOP,
+  setDetune: $fdb3284d9594f7cba4196e5aab827ce$var$NOOP,
+  setMute: $fdb3284d9594f7cba4196e5aab827ce$var$NOOP,
+  setVolume: $fdb3284d9594f7cba4196e5aab827ce$var$NOOP,
+  forEachActiveSound: function (callbackfn, scope) {
+    $fdb3284d9594f7cba4196e5aab827ce$var$BaseSoundManager.prototype.forEachActiveSound.call(this, callbackfn, scope);
+  },
+  destroy: function () {
+    $fdb3284d9594f7cba4196e5aab827ce$var$BaseSoundManager.prototype.destroy.call(this);
+  }
+});
+$fdb3284d9594f7cba4196e5aab827ce$exports = $fdb3284d9594f7cba4196e5aab827ce$var$NoAudioSoundManager;

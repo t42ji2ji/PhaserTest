@@ -1,0 +1,37 @@
+var $d393ec439f51727bb67799bcf6ca7507$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * Filter Types.
+ *
+ * @namespace Phaser.Textures.FilterMode
+ * @memberof Phaser.Textures
+ * @since 3.0.0
+ */
+var $d393ec439f51727bb67799bcf6ca7507$var$CONST = {
+  /**
+   * Linear filter type.
+   * 
+   * @name Phaser.Textures.FilterMode.LINEAR
+   * @type {integer}
+   * @const
+   * @since 3.0.0
+   */
+  LINEAR: 0,
+
+  /**
+   * Nearest neighbor filter type.
+   * 
+   * @name Phaser.Textures.FilterMode.NEAREST
+   * @type {integer}
+   * @const
+   * @since 3.0.0
+   */
+  NEAREST: 1
+};
+$d393ec439f51727bb67799bcf6ca7507$exports = $d393ec439f51727bb67799bcf6ca7507$var$CONST;

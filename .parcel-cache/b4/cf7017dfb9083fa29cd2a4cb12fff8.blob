@@ -1,0 +1,15 @@
+var $fd382125e2a05af45e526ece878b3bc0$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Renderer.Snapshot
+ */
+$fd382125e2a05af45e526ece878b3bc0$exports = {
+  Canvas: $parcel$require("fd382125e2a05af45e526ece878b3bc0", "./CanvasSnapshot"),
+  WebGL: $parcel$require("fd382125e2a05af45e526ece878b3bc0", "./WebGLSnapshot")
+};

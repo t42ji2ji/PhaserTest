@@ -1,0 +1,18 @@
+var $c837e41eda95f3695ca13a5194b7b0$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Plugins
+ */
+$c837e41eda95f3695ca13a5194b7b0$exports = {
+  BasePlugin: $parcel$require("52c837e41eda95f3695ca13a5194b7b0", "./BasePlugin"),
+  DefaultPlugins: $parcel$require("52c837e41eda95f3695ca13a5194b7b0", "./DefaultPlugins"),
+  PluginCache: $parcel$require("52c837e41eda95f3695ca13a5194b7b0", "./PluginCache"),
+  PluginManager: $parcel$require("52c837e41eda95f3695ca13a5194b7b0", "./PluginManager"),
+  ScenePlugin: $parcel$require("52c837e41eda95f3695ca13a5194b7b0", "./ScenePlugin")
+};

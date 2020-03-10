@@ -1,0 +1,19 @@
+var $c8423b2c01d5d36fbc509e28$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Scale.Events
+ */
+$c8423b2c01d5d36fbc509e28$exports = {
+  ENTER_FULLSCREEN: $parcel$require("25769814c8423b2c01d5d36fbc509e28", "./ENTER_FULLSCREEN_EVENT"),
+  FULLSCREEN_FAILED: $parcel$require("25769814c8423b2c01d5d36fbc509e28", "./FULLSCREEN_FAILED_EVENT"),
+  FULLSCREEN_UNSUPPORTED: $parcel$require("25769814c8423b2c01d5d36fbc509e28", "./FULLSCREEN_UNSUPPORTED_EVENT"),
+  LEAVE_FULLSCREEN: $parcel$require("25769814c8423b2c01d5d36fbc509e28", "./LEAVE_FULLSCREEN_EVENT"),
+  ORIENTATION_CHANGE: $parcel$require("25769814c8423b2c01d5d36fbc509e28", "./ORIENTATION_CHANGE_EVENT"),
+  RESIZE: $parcel$require("25769814c8423b2c01d5d36fbc509e28", "./RESIZE_EVENT")
+};

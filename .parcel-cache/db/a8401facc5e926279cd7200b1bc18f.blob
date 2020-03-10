@@ -1,0 +1,42 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $fdbc36cbd9da0053d356f9e596099$var$BuildGameObject = $parcel$require("895fdbc36cbd9da0053d356f9e596099", "../BuildGameObject");
+var $fdbc36cbd9da0053d356f9e596099$var$BuildGameObjectAnimation = $parcel$require("895fdbc36cbd9da0053d356f9e596099", "../BuildGameObjectAnimation");
+var $fdbc36cbd9da0053d356f9e596099$var$GameObjectCreator = $parcel$require("895fdbc36cbd9da0053d356f9e596099", "../GameObjectCreator");
+var $fdbc36cbd9da0053d356f9e596099$var$GetAdvancedValue = $parcel$require("895fdbc36cbd9da0053d356f9e596099", "../../utils/object/GetAdvancedValue");
+var $fdbc36cbd9da0053d356f9e596099$var$Sprite = $parcel$require("895fdbc36cbd9da0053d356f9e596099", "./Sprite");
+/**
+ * Creates a new Sprite Game Object and returns it.
+ *
+ * Note: This method will only be available if the Sprite Game Object has been built into Phaser.
+ *
+ * @method Phaser.GameObjects.GameObjectCreator#sprite
+ * @since 3.0.0
+ *
+ * @param {Phaser.Types.GameObjects.Sprite.SpriteConfig} config - The configuration object this Game Object will use to create itself.
+ * @param {boolean} [addToScene] - Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+ *
+ * @return {Phaser.GameObjects.Sprite} The Game Object that was created.
+ */
+
+$fdbc36cbd9da0053d356f9e596099$var$GameObjectCreator.register('sprite', function (config, addToScene) {
+  if (config === undefined) {
+    config = {};
+  }
+
+  var key = $fdbc36cbd9da0053d356f9e596099$var$GetAdvancedValue(config, 'key', null);
+  var frame = $fdbc36cbd9da0053d356f9e596099$var$GetAdvancedValue(config, 'frame', null);
+  var sprite = new $fdbc36cbd9da0053d356f9e596099$var$Sprite(this.scene, 0, 0, key, frame);
+
+  if (addToScene !== undefined) {
+    config.add = addToScene;
+  }
+
+  $fdbc36cbd9da0053d356f9e596099$var$BuildGameObject(this.scene, sprite, config); //  Sprite specific config options:
+
+  $fdbc36cbd9da0053d356f9e596099$var$BuildGameObjectAnimation(sprite, config);
+  return sprite;
+});

@@ -1,0 +1,19 @@
+var $a3661ff34e6ed96bd3ece3339f2ad531$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Input.Gamepad
+ */
+$a3661ff34e6ed96bd3ece3339f2ad531$exports = {
+  Axis: $parcel$require("a3661ff34e6ed96bd3ece3339f2ad531", "./Axis"),
+  Button: $parcel$require("a3661ff34e6ed96bd3ece3339f2ad531", "./Button"),
+  Events: $parcel$require("a3661ff34e6ed96bd3ece3339f2ad531", "./events"),
+  Gamepad: $parcel$require("a3661ff34e6ed96bd3ece3339f2ad531", "./Gamepad"),
+  GamepadPlugin: $parcel$require("a3661ff34e6ed96bd3ece3339f2ad531", "./GamepadPlugin"),
+  Configs: $parcel$require("a3661ff34e6ed96bd3ece3339f2ad531", "./configs/")
+};

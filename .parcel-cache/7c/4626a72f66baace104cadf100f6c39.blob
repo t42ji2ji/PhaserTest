@@ -1,0 +1,15 @@
+var $cc6a12ec7ae85422fe3c4efdc7d4897$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Utils.Base64
+ */
+$cc6a12ec7ae85422fe3c4efdc7d4897$exports = {
+  ArrayBufferToBase64: $parcel$require("4cc6a12ec7ae85422fe3c4efdc7d4897", "./ArrayBufferToBase64"),
+  Base64ToArrayBuffer: $parcel$require("4cc6a12ec7ae85422fe3c4efdc7d4897", "./Base64ToArrayBuffer")
+};

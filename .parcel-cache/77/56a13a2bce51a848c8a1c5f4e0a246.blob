@@ -1,0 +1,25 @@
+var $e8459d36c5987f79b45917ee31a2c9b$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $e8459d36c5987f79b45917ee31a2c9b$var$Factorial = $parcel$require("9e8459d36c5987f79b45917ee31a2c9b", "./Factorial");
+/**
+ * [description]
+ *
+ * @function Phaser.Math.Bernstein
+ * @since 3.0.0
+ *
+ * @param {number} n - [description]
+ * @param {number} i - [description]
+ *
+ * @return {number} [description]
+ */
+
+var $e8459d36c5987f79b45917ee31a2c9b$var$Bernstein = function (n, i) {
+  return $e8459d36c5987f79b45917ee31a2c9b$var$Factorial(n) / $e8459d36c5987f79b45917ee31a2c9b$var$Factorial(i) / $e8459d36c5987f79b45917ee31a2c9b$var$Factorial(n - i);
+};
+
+$e8459d36c5987f79b45917ee31a2c9b$exports = $e8459d36c5987f79b45917ee31a2c9b$var$Bernstein;

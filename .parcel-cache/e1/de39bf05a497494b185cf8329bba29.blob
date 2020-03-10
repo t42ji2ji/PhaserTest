@@ -1,0 +1,36 @@
+var $f15f9f43180dd70e9645f69fef1e$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Geom.Intersects
+ */
+$f15f9f43180dd70e9645f69fef1e$exports = {
+  CircleToCircle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./CircleToCircle"),
+  CircleToRectangle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./CircleToRectangle"),
+  GetCircleToCircle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./GetCircleToCircle"),
+  GetCircleToRectangle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./GetCircleToRectangle"),
+  GetLineToCircle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./GetLineToCircle"),
+  GetLineToRectangle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./GetLineToRectangle"),
+  GetRectangleIntersection: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./GetRectangleIntersection"),
+  GetRectangleToRectangle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./GetRectangleToRectangle"),
+  GetRectangleToTriangle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./GetRectangleToTriangle"),
+  GetTriangleToCircle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./GetTriangleToCircle"),
+  GetTriangleToLine: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./GetTriangleToLine"),
+  GetTriangleToTriangle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./GetTriangleToTriangle"),
+  LineToCircle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./LineToCircle"),
+  LineToLine: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./LineToLine"),
+  LineToRectangle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./LineToRectangle"),
+  PointToLine: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./PointToLine"),
+  PointToLineSegment: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./PointToLineSegment"),
+  RectangleToRectangle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./RectangleToRectangle"),
+  RectangleToTriangle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./RectangleToTriangle"),
+  RectangleToValues: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./RectangleToValues"),
+  TriangleToCircle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./TriangleToCircle"),
+  TriangleToLine: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./TriangleToLine"),
+  TriangleToTriangle: $parcel$require("0261f15f9f43180dd70e9645f69fef1e", "./TriangleToTriangle")
+};

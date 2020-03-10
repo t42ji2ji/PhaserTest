@@ -1,0 +1,166 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _phaser = _interopRequireDefault(require("phaser"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var isWalk = false;
+var direction = 1;
+var hitFloor = false;
+const gameStart = {
+  key: 'gameStart',
+  preload: function () {
+    this.load.image('bg1', require('../../assets/background/plx-1.png'));
+    this.load.image('bg2', require('../../assets/background/plx-2.png'));
+    this.load.image('bg3', require('../../assets/background/plx-3.png'));
+    this.load.image('bg4', require('../../assets/background/plx-4.png'));
+    this.load.image('bg5', require('../../assets/background/plx-5.png'));
+    this.load.image('footer', require('../../assets/background/footer.png'));
+    this.load.atlas('boy_walk', require('../../assets/idl/walk.png'), require('../../assets/idl/walk.json'));
+    this.load.atlas('boy_idle', require('../../assets/idl/idle.png'), require('../../assets/idl/idle.json'));
+    this.load.image('jump', require('../../assets/idl/jump.png'));
+  },
+  create: function () {
+    // 資源載入完成，加入遊戲物件及相關設定
+    this.bg1 = this.add.tileSprite(400, 300, 800, 600, 'bg1');
+    this.bg2 = this.add.tileSprite(400, 300, 800, 600, 'bg2');
+    this.bg3 = this.add.tileSprite(400, 300, 800, 600, 'bg3');
+    this.bg4 = this.add.tileSprite(400, 300, 800, 600, 'bg4');
+    this.bg5 = this.add.tileSprite(400, 300, 800, 600, 'bg5');
+    this.footer = this.add.tileSprite(400, 588, 800, 100, 'footer'); // 設定物件不會動靜止不會掉下去
+
+    this.physics.add.existing(this.footer);
+    this.footer.body.immovable = true; // 物件的位置和旋轉是否受其速度，加速度，阻力和重力的影響
+
+    this.footer.body.moves = false; // this.player = this.add.sprite(400, 480, 'boy', 'run-outline_0007_0.png');
+    // 現在改成透過 physics 再加入到畫面上
+
+    this.player = this.physics.add.sprite(400, 400, 'boy', 'idle.png');
+    this.player.setCollideWorldBounds(true); //設定角色彈跳值
+
+    this.player.setBounce(0.2); //設定角色碰撞邊界
+
+    this.player.setSize(23, 34, 0); //將需要碰撞的物件綁在一起
+
+    this.physics.add.collider(this.player, this.footer, hitSprite); //設定角色顯示大小
+
+    this.player.setScale(2);
+    this.anims.create({
+      key: 'walk',
+      repeat: -1,
+      frameRate: 20,
+      frames: this.anims.generateFrameNames('boy_walk', {
+        prefix: 'walk_',
+        suffix: '.png',
+        start: 0,
+        end: 7,
+        zeroPad: 1
+      })
+    });
+    this.anims.create({
+      key: 'idle',
+      repeat: -1,
+      frameRate: 4,
+      frames: this.anims.generateFrameNames('boy_idle', {
+        prefix: 'idle_',
+        suffix: '.png',
+        start: 0,
+        end: 10,
+        zeroPad: 1
+      })
+    });
+    this.player.anims.play('idle');
+  },
+  update: function () {
+    // 遊戲狀態更新d
+    if (isWalk) {
+      this.bg1.tilePositionX += 1 * direction;
+      this.bg2.tilePositionX += 1.5 * direction;
+      this.bg3.tilePositionX += 2 * direction;
+      this.bg4.tilePositionX += 2.5 * direction;
+      this.bg5.tilePositionX += 3 * direction;
+      this.footer.tilePositionX += 4 * direction;
+    } // this.input.keyboard.addKeys('W,S,A,D');    var blocked = player.body.blocked;
+    // var blocked = this.player.body.blocked;
+    // if (cursors.left.isDown && !blocked.left) {
+    //   this.player.flipX = true;
+    //   this.player.setVelocityX(-160);
+    //   this.player.play('walk', true);
+    // } else if (cursors.right.isDown && !blocked.right) {
+    //   this.player.flipX = false;
+    //   this.player.setVelocityX(160);
+    //   this.player.play('walk', true);
+    // } else {
+    //   this.player.setVelocityX(0);
+    //   this.player.play('walk');
+    // }
+    // if (cursors.up.isDown) {
+    //   console.log('upp');
+    //   this.player.setVelocityY(-330);
+    // }
+
+
+    this.input.keyboard.on('keydown-D', function () {
+      this.player.flipX = false;
+      direction = 1;
+      this.player.setVelocityX(60);
+
+      if (isWalk) {
+        return;
+      }
+
+      isWalk = true;
+      this.player.anims.play('walk');
+    }, this);
+    this.input.keyboard.on('keyup-D', function () {
+      isWalk = false;
+      this.player.anims.play('idle');
+      this.player.setVelocityX(0);
+    }, this);
+    this.input.keyboard.on('keydown-A', function () {
+      if (isWalk) {
+        return;
+      }
+
+      isWalk = true;
+      this.player.flipX = true;
+      direction = -1;
+      this.player.anims.play('walk');
+      this.player.setVelocityX(-60);
+    }, this);
+    this.input.keyboard.on('keyup-A', function () {
+      isWalk = false;
+      this.player.anims.play('idle');
+      this.player.setVelocityX(0);
+    }, this);
+    this.input.keyboard.on('keydown-W', function () {
+      hitFloor = false;
+      this.player.anims.stop(null, true);
+      this.player.setVelocityY(-530);
+      this.player.setTexture('jump', 0);
+
+      if (this.player.body.blocked.down) {
+        console.log('down');
+      }
+    }, this);
+    this.input.keyboard.on('keyup-W', function () {}, this);
+  }
+};
+
+function hitSprite(player, sprite2) {
+  if (hitFloor) {
+    return;
+  }
+
+  player.anims.play('walk');
+  console.log(player.blocked);
+  hitFloor = true;
+}
+
+var _default = gameStart;
+exports.default = _default;

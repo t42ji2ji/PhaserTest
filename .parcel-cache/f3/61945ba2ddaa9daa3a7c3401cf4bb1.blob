@@ -1,0 +1,28 @@
+var $cc66bd4be8eaac8199d4fc1d81f66412$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $cc66bd4be8eaac8199d4fc1d81f66412$var$CONST = $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./const");
+var $cc66bd4be8eaac8199d4fc1d81f66412$var$Extend = $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "../utils/object/Extend");
+/**
+ * @namespace Phaser.Loader
+ */
+
+var $cc66bd4be8eaac8199d4fc1d81f66412$var$Loader = {
+  Events: $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./events"),
+  FileTypes: $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./filetypes"),
+  File: $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./File"),
+  FileTypesManager: $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./FileTypesManager"),
+  GetURL: $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./GetURL"),
+  LoaderPlugin: $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./LoaderPlugin"),
+  MergeXHRSettings: $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./MergeXHRSettings"),
+  MultiFile: $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./MultiFile"),
+  XHRLoader: $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./XHRLoader"),
+  XHRSettings: $parcel$require("cc66bd4be8eaac8199d4fc1d81f66412", "./XHRSettings")
+}; //   Merge in the consts
+
+$cc66bd4be8eaac8199d4fc1d81f66412$var$Loader = $cc66bd4be8eaac8199d4fc1d81f66412$var$Extend(false, $cc66bd4be8eaac8199d4fc1d81f66412$var$Loader, $cc66bd4be8eaac8199d4fc1d81f66412$var$CONST);
+$cc66bd4be8eaac8199d4fc1d81f66412$exports = $cc66bd4be8eaac8199d4fc1d81f66412$var$Loader;

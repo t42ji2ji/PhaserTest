@@ -1,0 +1,71 @@
+var $fcda8c452d5f6cc14b7adc7d11e8c9ce$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Class = $parcel$require("fcda8c452d5f6cc14b7adc7d11e8c9ce", "../../utils/Class");
+var $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components = $parcel$require("fcda8c452d5f6cc14b7adc7d11e8c9ce", "../components");
+var $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$GameObject = $parcel$require("fcda8c452d5f6cc14b7adc7d11e8c9ce", "../GameObject");
+var $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$ImageRender = $parcel$require("fcda8c452d5f6cc14b7adc7d11e8c9ce", "./ImageRender");
+/**
+ * @classdesc
+ * An Image Game Object.
+ *
+ * An Image is a light-weight Game Object useful for the display of static images in your game,
+ * such as logos, backgrounds, scenery or other non-animated elements. Images can have input
+ * events and physics bodies, or be tweened, tinted or scrolled. The main difference between an
+ * Image and a Sprite is that you cannot animate an Image as they do not have the Animation component.
+ *
+ * @class Image
+ * @extends Phaser.GameObjects.GameObject
+ * @memberof Phaser.GameObjects
+ * @constructor
+ * @since 3.0.0
+ *
+ * @extends Phaser.GameObjects.Components.Alpha
+ * @extends Phaser.GameObjects.Components.BlendMode
+ * @extends Phaser.GameObjects.Components.Depth
+ * @extends Phaser.GameObjects.Components.Flip
+ * @extends Phaser.GameObjects.Components.GetBounds
+ * @extends Phaser.GameObjects.Components.Mask
+ * @extends Phaser.GameObjects.Components.Origin
+ * @extends Phaser.GameObjects.Components.Pipeline
+ * @extends Phaser.GameObjects.Components.ScrollFactor
+ * @extends Phaser.GameObjects.Components.Size
+ * @extends Phaser.GameObjects.Components.TextureCrop
+ * @extends Phaser.GameObjects.Components.Tint
+ * @extends Phaser.GameObjects.Components.Transform
+ * @extends Phaser.GameObjects.Components.Visible
+ *
+ * @param {Phaser.Scene} scene - The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
+ * @param {number} x - The horizontal position of this Game Object in the world.
+ * @param {number} y - The vertical position of this Game Object in the world.
+ * @param {string} texture - The key of the Texture this Game Object will use to render with, as stored in the Texture Manager.
+ * @param {(string|integer)} [frame] - An optional frame from the Texture this Game Object is rendering with.
+ */
+
+var $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Image = new $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Class({
+  Extends: $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$GameObject,
+  Mixins: [$fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.Alpha, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.BlendMode, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.Depth, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.Flip, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.GetBounds, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.Mask, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.Origin, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.Pipeline, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.ScrollFactor, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.Size, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.TextureCrop, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.Tint, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.Transform, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Components.Visible, $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$ImageRender],
+  initialize: function Image(scene, x, y, texture, frame) {
+    $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$GameObject.call(this, scene, 'Image');
+    /**
+     * The internal crop data object, as used by `setCrop` and passed to the `Frame.setCropUVs` method.
+     *
+     * @name Phaser.GameObjects.Image#_crop
+     * @type {object}
+     * @private
+     * @since 3.11.0
+     */
+
+    this._crop = this.resetCropObject();
+    this.setTexture(texture, frame);
+    this.setPosition(x, y);
+    this.setSizeToFrame();
+    this.setOriginFromFrame();
+    this.initPipeline();
+  }
+});
+$fcda8c452d5f6cc14b7adc7d11e8c9ce$exports = $fcda8c452d5f6cc14b7adc7d11e8c9ce$var$Image;

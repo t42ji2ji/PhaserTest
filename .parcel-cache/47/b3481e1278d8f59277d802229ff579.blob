@@ -1,0 +1,24 @@
+var $d6ef3e7a3c406b3751a7627fd4c25c0$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $d6ef3e7a3c406b3751a7627fd4c25c0$var$CONST = $parcel$require("3d6ef3e7a3c406b3751a7627fd4c25c0", "./const");
+/**
+ * Convert the given angle from degrees, to the equivalent angle in radians.
+ *
+ * @function Phaser.Math.DegToRad
+ * @since 3.0.0
+ *
+ * @param {integer} degrees - The angle (in degrees) to convert to radians.
+ *
+ * @return {number} The given angle converted to radians.
+ */
+
+var $d6ef3e7a3c406b3751a7627fd4c25c0$var$DegToRad = function (degrees) {
+  return degrees * $d6ef3e7a3c406b3751a7627fd4c25c0$var$CONST.DEG_TO_RAD;
+};
+
+$d6ef3e7a3c406b3751a7627fd4c25c0$exports = $d6ef3e7a3c406b3751a7627fd4c25c0$var$DegToRad;

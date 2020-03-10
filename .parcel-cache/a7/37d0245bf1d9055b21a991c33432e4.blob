@@ -1,0 +1,44 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $c2e5c3015bfbe3acffd7f2c122f042c9$var$BuildGameObject = $parcel$require("c2e5c3015bfbe3acffd7f2c122f042c9", "../BuildGameObject");
+var $c2e5c3015bfbe3acffd7f2c122f042c9$var$GameObjectCreator = $parcel$require("c2e5c3015bfbe3acffd7f2c122f042c9", "../GameObjectCreator");
+var $c2e5c3015bfbe3acffd7f2c122f042c9$var$GetAdvancedValue = $parcel$require("c2e5c3015bfbe3acffd7f2c122f042c9", "../../utils/object/GetAdvancedValue");
+var $c2e5c3015bfbe3acffd7f2c122f042c9$var$GetValue = $parcel$require("c2e5c3015bfbe3acffd7f2c122f042c9", "../../utils/object/GetValue");
+var $c2e5c3015bfbe3acffd7f2c122f042c9$var$Mesh = $parcel$require("c2e5c3015bfbe3acffd7f2c122f042c9", "./Mesh");
+/**
+ * Creates a new Mesh Game Object and returns it.
+ *
+ * Note: This method will only be available if the Mesh Game Object and WebGL support have been built into Phaser.
+ *
+ * @method Phaser.GameObjects.GameObjectCreator#mesh
+ * @since 3.0.0
+ *
+ * @param {object} config - The configuration object this Game Object will use to create itself.
+ * @param {boolean} [addToScene] - Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+ *
+ * @return {Phaser.GameObjects.Mesh} The Game Object that was created.
+ */
+
+$c2e5c3015bfbe3acffd7f2c122f042c9$var$GameObjectCreator.register('mesh', function (config, addToScene) {
+  if (config === undefined) {
+    config = {};
+  }
+
+  var key = $c2e5c3015bfbe3acffd7f2c122f042c9$var$GetAdvancedValue(config, 'key', null);
+  var frame = $c2e5c3015bfbe3acffd7f2c122f042c9$var$GetAdvancedValue(config, 'frame', null);
+  var vertices = $c2e5c3015bfbe3acffd7f2c122f042c9$var$GetValue(config, 'vertices', []);
+  var colors = $c2e5c3015bfbe3acffd7f2c122f042c9$var$GetValue(config, 'colors', []);
+  var alphas = $c2e5c3015bfbe3acffd7f2c122f042c9$var$GetValue(config, 'alphas', []);
+  var uv = $c2e5c3015bfbe3acffd7f2c122f042c9$var$GetValue(config, 'uv', []);
+  var mesh = new $c2e5c3015bfbe3acffd7f2c122f042c9$var$Mesh(this.scene, 0, 0, vertices, uv, colors, alphas, key, frame);
+
+  if (addToScene !== undefined) {
+    config.add = addToScene;
+  }
+
+  $c2e5c3015bfbe3acffd7f2c122f042c9$var$BuildGameObject(this.scene, mesh, config);
+  return mesh;
+}); //  When registering a factory function 'this' refers to the GameObjectCreator context.

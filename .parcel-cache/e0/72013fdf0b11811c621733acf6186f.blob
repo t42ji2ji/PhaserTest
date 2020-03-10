@@ -1,0 +1,20 @@
+var $f5153d747cc89246a71835e7e37e463e$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Renderer
+ */
+
+/**
+ * @namespace Phaser.Types.Renderer
+ */
+$f5153d747cc89246a71835e7e37e463e$exports = {
+  Canvas: $parcel$require("f5153d747cc89246a71835e7e37e463e", "./canvas"),
+  Snapshot: $parcel$require("f5153d747cc89246a71835e7e37e463e", "./snapshot"),
+  WebGL: $parcel$require("f5153d747cc89246a71835e7e37e463e", "./webgl")
+};

@@ -1,0 +1,34 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.aFunction = aFunction;
+
+var _phaser = _interopRequireDefault(require("phaser"));
+
+var _gameStart = _interopRequireDefault(require("./scene/gameStart"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function aFunction() {
+  console.log('function test');
+}
+
+const config = {
+  type: _phaser.default.AUTO,
+  width: 800,
+  height: 600,
+  parent: 'app',
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: {
+        y: 1000
+      },
+      debug: true
+    }
+  },
+  scene: [_gameStart.default]
+};
+const game = new _phaser.default.Game(config);

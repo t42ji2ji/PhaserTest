@@ -1,0 +1,19 @@
+var $c1bf11a5b26b08feb71138efc5676d8$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Display
+ */
+$c1bf11a5b26b08feb71138efc5676d8$exports = {
+  Align: $parcel$require("6c1bf11a5b26b08feb71138efc5676d8", "./align"),
+  BaseShader: $parcel$require("6c1bf11a5b26b08feb71138efc5676d8", "./shader/BaseShader"),
+  Bounds: $parcel$require("6c1bf11a5b26b08feb71138efc5676d8", "./bounds"),
+  Canvas: $parcel$require("6c1bf11a5b26b08feb71138efc5676d8", "./canvas"),
+  Color: $parcel$require("6c1bf11a5b26b08feb71138efc5676d8", "./color"),
+  Masks: $parcel$require("6c1bf11a5b26b08feb71138efc5676d8", "./mask")
+};

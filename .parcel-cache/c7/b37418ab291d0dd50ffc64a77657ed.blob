@@ -1,0 +1,17 @@
+var $c64f1406bd2e1e889118393777257b2$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Input.Mouse
+ */
+
+/* eslint-disable */
+$c64f1406bd2e1e889118393777257b2$exports = {
+  MouseManager: $parcel$require("3c64f1406bd2e1e889118393777257b2", "./MouseManager")
+};
+/* eslint-enable */

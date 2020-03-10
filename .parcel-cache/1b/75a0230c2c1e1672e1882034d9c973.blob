@@ -1,0 +1,8 @@
+$parcel$require("107c51290fb1134ae35a7632ee8dacef", "./Array.forEach");
+$parcel$require("107c51290fb1134ae35a7632ee8dacef", "./Array.isArray");
+$parcel$require("107c51290fb1134ae35a7632ee8dacef", "./AudioContextMonkeyPatch");
+$parcel$require("107c51290fb1134ae35a7632ee8dacef", "./console");
+$parcel$require("107c51290fb1134ae35a7632ee8dacef", "./Math.trunc");
+$parcel$require("107c51290fb1134ae35a7632ee8dacef", "./performance.now");
+$parcel$require("107c51290fb1134ae35a7632ee8dacef", "./requestAnimationFrame");
+$parcel$require("107c51290fb1134ae35a7632ee8dacef", "./Uint32Array");

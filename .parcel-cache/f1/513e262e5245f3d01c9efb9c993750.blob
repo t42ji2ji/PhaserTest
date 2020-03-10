@@ -1,0 +1,27 @@
+var $e29ec126ab1ae00511c6379b911b35$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $e29ec126ab1ae00511c6379b911b35$var$Color = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./Color");
+$e29ec126ab1ae00511c6379b911b35$var$Color.ColorToRGBA = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./ColorToRGBA");
+$e29ec126ab1ae00511c6379b911b35$var$Color.ComponentToHex = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./ComponentToHex");
+$e29ec126ab1ae00511c6379b911b35$var$Color.GetColor = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./GetColor");
+$e29ec126ab1ae00511c6379b911b35$var$Color.GetColor32 = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./GetColor32");
+$e29ec126ab1ae00511c6379b911b35$var$Color.HexStringToColor = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./HexStringToColor");
+$e29ec126ab1ae00511c6379b911b35$var$Color.HSLToColor = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./HSLToColor");
+$e29ec126ab1ae00511c6379b911b35$var$Color.HSVColorWheel = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./HSVColorWheel");
+$e29ec126ab1ae00511c6379b911b35$var$Color.HSVToRGB = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./HSVToRGB");
+$e29ec126ab1ae00511c6379b911b35$var$Color.HueToComponent = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./HueToComponent");
+$e29ec126ab1ae00511c6379b911b35$var$Color.IntegerToColor = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./IntegerToColor");
+$e29ec126ab1ae00511c6379b911b35$var$Color.IntegerToRGB = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./IntegerToRGB");
+$e29ec126ab1ae00511c6379b911b35$var$Color.Interpolate = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./Interpolate");
+$e29ec126ab1ae00511c6379b911b35$var$Color.ObjectToColor = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./ObjectToColor");
+$e29ec126ab1ae00511c6379b911b35$var$Color.RandomRGB = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./RandomRGB");
+$e29ec126ab1ae00511c6379b911b35$var$Color.RGBStringToColor = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./RGBStringToColor");
+$e29ec126ab1ae00511c6379b911b35$var$Color.RGBToHSV = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./RGBToHSV");
+$e29ec126ab1ae00511c6379b911b35$var$Color.RGBToString = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./RGBToString");
+$e29ec126ab1ae00511c6379b911b35$var$Color.ValueToColor = $parcel$require("39e29ec126ab1ae00511c6379b911b35", "./ValueToColor");
+$e29ec126ab1ae00511c6379b911b35$exports = $e29ec126ab1ae00511c6379b911b35$var$Color;

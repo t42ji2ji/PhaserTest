@@ -1,0 +1,28 @@
+var $c69b9eddb138965de8b0edf9c65810e$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Tilemaps
+ */
+$c69b9eddb138965de8b0edf9c65810e$exports = {
+  Components: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./components"),
+  Parsers: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./parsers"),
+  Formats: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./Formats"),
+  ImageCollection: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./ImageCollection"),
+  ParseToTilemap: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./ParseToTilemap"),
+  Tile: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./Tile"),
+  Tilemap: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./Tilemap"),
+  TilemapCreator: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./TilemapCreator"),
+  TilemapFactory: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./TilemapFactory"),
+  Tileset: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./Tileset"),
+  LayerData: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./mapdata/LayerData"),
+  MapData: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./mapdata/MapData"),
+  ObjectLayer: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./mapdata/ObjectLayer"),
+  DynamicTilemapLayer: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./dynamiclayer/DynamicTilemapLayer"),
+  StaticTilemapLayer: $parcel$require("0c69b9eddb138965de8b0edf9c65810e", "./staticlayer/StaticTilemapLayer")
+};

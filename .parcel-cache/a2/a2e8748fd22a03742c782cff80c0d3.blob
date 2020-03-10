@@ -1,0 +1,42 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $dc29de68355b4dc3d31999c5cb7cb13e$var$BuildGameObject = $parcel$require("dc29de68355b4dc3d31999c5cb7cb13e", "../BuildGameObject");
+var $dc29de68355b4dc3d31999c5cb7cb13e$var$GameObjectCreator = $parcel$require("dc29de68355b4dc3d31999c5cb7cb13e", "../GameObjectCreator");
+var $dc29de68355b4dc3d31999c5cb7cb13e$var$GetAdvancedValue = $parcel$require("dc29de68355b4dc3d31999c5cb7cb13e", "../../utils/object/GetAdvancedValue");
+var $dc29de68355b4dc3d31999c5cb7cb13e$var$Shader = $parcel$require("dc29de68355b4dc3d31999c5cb7cb13e", "./Shader");
+/**
+ * Creates a new Shader Game Object and returns it.
+ *
+ * Note: This method will only be available if the Shader Game Object and WebGL support have been built into Phaser.
+ *
+ * @method Phaser.GameObjects.GameObjectCreator#shader
+ * @since 3.17.0
+ *
+ * @param {object} config - The configuration object this Game Object will use to create itself.
+ * @param {boolean} [addToScene] - Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+ *
+ * @return {Phaser.GameObjects.Shader} The Game Object that was created.
+ */
+
+$dc29de68355b4dc3d31999c5cb7cb13e$var$GameObjectCreator.register('shader', function (config, addToScene) {
+  if (config === undefined) {
+    config = {};
+  }
+
+  var key = $dc29de68355b4dc3d31999c5cb7cb13e$var$GetAdvancedValue(config, 'key', null);
+  var x = $dc29de68355b4dc3d31999c5cb7cb13e$var$GetAdvancedValue(config, 'x', 0);
+  var y = $dc29de68355b4dc3d31999c5cb7cb13e$var$GetAdvancedValue(config, 'y', 0);
+  var width = $dc29de68355b4dc3d31999c5cb7cb13e$var$GetAdvancedValue(config, 'width', 128);
+  var height = $dc29de68355b4dc3d31999c5cb7cb13e$var$GetAdvancedValue(config, 'height', 128);
+  var shader = new $dc29de68355b4dc3d31999c5cb7cb13e$var$Shader(this.scene, key, x, y, width, height);
+
+  if (addToScene !== undefined) {
+    config.add = addToScene;
+  }
+
+  $dc29de68355b4dc3d31999c5cb7cb13e$var$BuildGameObject(this.scene, shader, config);
+  return shader;
+}); //  When registering a factory function 'this' refers to the GameObjectCreator context.

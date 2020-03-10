@@ -1,0 +1,18 @@
+var $db9fb6ca171153b5fa8f45b1bb84979$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Create.Palettes
+ */
+$db9fb6ca171153b5fa8f45b1bb84979$exports = {
+  ARNE16: $parcel$require("4db9fb6ca171153b5fa8f45b1bb84979", "./Arne16"),
+  C64: $parcel$require("4db9fb6ca171153b5fa8f45b1bb84979", "./C64"),
+  CGA: $parcel$require("4db9fb6ca171153b5fa8f45b1bb84979", "./CGA"),
+  JMP: $parcel$require("4db9fb6ca171153b5fa8f45b1bb84979", "./JMP"),
+  MSX: $parcel$require("4db9fb6ca171153b5fa8f45b1bb84979", "./MSX")
+};

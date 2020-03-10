@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "parcel": "^2.0.0-alpha.3.2",
+    "sass": "^1.26.2"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "phaser": "^3.20.1",
+    "pug": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "parcel src/index.pug",
+    "devopen": "parcel src/index.pug --open 'google chrome'",
+    "build": "parcel build src/index.pug"
+  }
+}

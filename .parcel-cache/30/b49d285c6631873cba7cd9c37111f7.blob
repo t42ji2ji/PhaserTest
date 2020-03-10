@@ -1,0 +1,41 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $fa4561b6271e4e4dec61947d84556a6d$var$BuildGameObject = $parcel$require("fa4561b6271e4e4dec61947d84556a6d", "../BuildGameObject");
+var $fa4561b6271e4e4dec61947d84556a6d$var$GameObjectCreator = $parcel$require("fa4561b6271e4e4dec61947d84556a6d", "../GameObjectCreator");
+var $fa4561b6271e4e4dec61947d84556a6d$var$GetAdvancedValue = $parcel$require("fa4561b6271e4e4dec61947d84556a6d", "../../utils/object/GetAdvancedValue");
+var $fa4561b6271e4e4dec61947d84556a6d$var$Quad = $parcel$require("fa4561b6271e4e4dec61947d84556a6d", "./Quad");
+/**
+ * Creates a new Quad Game Object and returns it.
+ *
+ * Note: This method will only be available if the Quad Game Object and WebGL support have been built into Phaser.
+ *
+ * @method Phaser.GameObjects.GameObjectCreator#quad
+ * @since 3.0.0
+ *
+ * @param {object} config - The configuration object this Game Object will use to create itself.
+ * @param {boolean} [addToScene] - Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+ *
+ * @return {Phaser.GameObjects.Quad} The Game Object that was created.
+ */
+
+$fa4561b6271e4e4dec61947d84556a6d$var$GameObjectCreator.register('quad', function (config, addToScene) {
+  if (config === undefined) {
+    config = {};
+  }
+
+  var x = $fa4561b6271e4e4dec61947d84556a6d$var$GetAdvancedValue(config, 'x', 0);
+  var y = $fa4561b6271e4e4dec61947d84556a6d$var$GetAdvancedValue(config, 'y', 0);
+  var key = $fa4561b6271e4e4dec61947d84556a6d$var$GetAdvancedValue(config, 'key', null);
+  var frame = $fa4561b6271e4e4dec61947d84556a6d$var$GetAdvancedValue(config, 'frame', null);
+  var quad = new $fa4561b6271e4e4dec61947d84556a6d$var$Quad(this.scene, x, y, key, frame);
+
+  if (addToScene !== undefined) {
+    config.add = addToScene;
+  }
+
+  $fa4561b6271e4e4dec61947d84556a6d$var$BuildGameObject(this.scene, quad, config);
+  return quad;
+});

@@ -1,0 +1,17 @@
+var $e224c9dd95f7a4aaad630929b3$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2018 Photon Storm Ltd.
+ * @license      {@link https://github.com/photonstorm/phaser/blob/master/license.txt|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Cameras.Sprite3D
+ */
+$e224c9dd95f7a4aaad630929b3$exports = {
+  Camera: $parcel$require("313940e224c9dd95f7a4aaad630929b3", "./Camera"),
+  CameraManager: $parcel$require("313940e224c9dd95f7a4aaad630929b3", "./CameraManager"),
+  OrthographicCamera: $parcel$require("313940e224c9dd95f7a4aaad630929b3", "./OrthographicCamera"),
+  PerspectiveCamera: $parcel$require("313940e224c9dd95f7a4aaad630929b3", "./PerspectiveCamera")
+};

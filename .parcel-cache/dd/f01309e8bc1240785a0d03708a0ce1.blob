@@ -1,0 +1,244 @@
+var $d19c02f05dd65bd277596d0e0c45b7a2$exports = {};
+$parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "phaser");
+var $d19c02f05dd65bd277596d0e0c45b7a2$var$isWalk = false;
+var $d19c02f05dd65bd277596d0e0c45b7a2$var$direction = 1;
+var $d19c02f05dd65bd277596d0e0c45b7a2$var$inAir = false;
+var $d19c02f05dd65bd277596d0e0c45b7a2$var$stars;
+var $d19c02f05dd65bd277596d0e0c45b7a2$var$TapState = [false, true, false];
+var $d19c02f05dd65bd277596d0e0c45b7a2$var$lastTime = 0;
+var $d19c02f05dd65bd277596d0e0c45b7a2$var$score = 0;
+var $d19c02f05dd65bd277596d0e0c45b7a2$var$scoreText;
+var $d19c02f05dd65bd277596d0e0c45b7a2$export$default = {
+  key: 'gameStart',
+  preload: function preload() {
+    this.load.image("star", $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/background/star.png"));
+    this.load.image("buttons", $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/background/star.png"));
+    this.load.image('bg1', $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/background/plx-1.png"));
+    this.load.image('bg2', $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/background/plx-2.png"));
+    this.load.image('bg3', $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/background/plx-3.png"));
+    this.load.image('bg4', $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/background/plx-4.png"));
+    this.load.image('bg5', $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/background/plx-5.png"));
+    this.load.image('footer', $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/background/footer.png"));
+    this.load.atlas('boy_walk', $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/idl/walk.png"), $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/idl/walk.json"));
+    this.load.atlas('boy_idle', $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/idl/idle.png"), $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/idl/idle.json"));
+    this.load.image('jump', $parcel$require("d19c02f05dd65bd277596d0e0c45b7a2", "../../assets/idl/jump.png"));
+  },
+  create: function create() {
+    // 資源載入完成，加入遊戲物件及相關設定
+    this.bg1 = this.add.tileSprite(400, 300, 800, 600, 'bg1');
+    this.bg2 = this.add.tileSprite(400, 300, 800, 600, 'bg2');
+    this.bg3 = this.add.tileSprite(400, 300, 800, 600, 'bg3');
+    this.bg4 = this.add.tileSprite(400, 300, 800, 600, 'bg4');
+    this.bg5 = this.add.tileSprite(400, 300, 800, 600, 'bg5');
+    this.footer = this.add.tileSprite(400, 588, 800, 100, 'footer');
+    $d19c02f05dd65bd277596d0e0c45b7a2$var$scoreText = this.add.text(16, 16, 'score: 0', {
+      fontSize: '32px',
+      fill: '#FFF'
+    });
+    this.playerState = this.add.sprite(40, 80, 'buttons', 0).setInteractive();
+    this.playerState.on('pointerdown', function () {
+      var bb = false;
+      $d19c02f05dd65bd277596d0e0c45b7a2$var$TapState.forEach(function (val, index, array) {
+        if (!bb) {
+          if (val) {
+            console.log($d19c02f05dd65bd277596d0e0c45b7a2$var$TapState);
+            array[index] = false;
+
+            if (index == array.length - 1) {
+              array[0] = true;
+              bb = true;
+            } else {
+              array[index + 1] = true;
+              bb = true;
+            }
+          }
+        }
+      });
+    });
+    this.anims.create({
+      key: 'walk',
+      repeat: -1,
+      frameRate: 20,
+      frames: this.anims.generateFrameNames('boy_walk', {
+        prefix: 'walk_',
+        suffix: '.png',
+        start: 0,
+        end: 7,
+        zeroPad: 1
+      })
+    });
+    this.anims.create({
+      key: 'idle',
+      repeat: -1,
+      frameRate: 4,
+      frames: this.anims.generateFrameNames('boy_idle', {
+        prefix: 'idle_',
+        suffix: '.png',
+        start: 0,
+        end: 10,
+        zeroPad: 1
+      })
+    });
+    this.platforms = this.physics.add.staticGroup();
+    this.platforms.create(600, 400, 'footer').setScale(0.7).refreshBody();
+    this.platforms.create(50, 250, 'footer').setScale(0.7).refreshBody();
+    this.platforms.create(750, 220, 'footer').setScale(0.7).refreshBody();
+    this.platforms.add(this.footer); // 物件的位置和旋轉是否受其速度，加速度，阻力和重力的影響
+
+    this.footer.body.moves = false;
+    this.footer.body.immovable = true; // 設定物件不會動靜止不會掉下去
+
+    this.physics.add.existing(this.footer); // this.player = this.add.sprite(400, 480, 'boy', 'run-outline_0007_0.png');
+    // 現在改成透過 physics 再加入到畫面上
+
+    this.player = this.physics.add.sprite(300, 400, 'boy', 'idle.png');
+    this.player.setCollideWorldBounds(true);
+    this.player.body.setGravityY(-100); //設定角色彈跳值
+
+    this.player.setBounce(0.2); //設定角色碰撞邊界
+
+    this.player.setSize(23, 34, 0); //將需要碰撞的物件綁在一起
+
+    this.physics.add.collider(this.player, this.footer, $d19c02f05dd65bd277596d0e0c45b7a2$var$hitSprite);
+    this.physics.add.collider(this.player, this.platforms, $d19c02f05dd65bd277596d0e0c45b7a2$var$hitSprite); //設定角色顯示大小
+
+    this.player.setScale(2);
+    $d19c02f05dd65bd277596d0e0c45b7a2$var$stars = this.physics.add.group({
+      key: 'star',
+      repeat: 11,
+      setXY: {
+        x: 12,
+        y: 0,
+        stepX: 70
+      }
+    });
+    $d19c02f05dd65bd277596d0e0c45b7a2$var$stars.children.iterate(function (child) {
+      child.setBounceY($d19c02f05dd65bd277596d0e0c45b7a2$import$Phaser.Math.FloatBetween(0.4, 0.8));
+    });
+    this.physics.add.collider($d19c02f05dd65bd277596d0e0c45b7a2$var$stars, this.platforms);
+    this.physics.add.overlap(this.player, $d19c02f05dd65bd277596d0e0c45b7a2$var$stars, $d19c02f05dd65bd277596d0e0c45b7a2$var$collectStar, null, this);
+  },
+  update: function update() {
+    // 遊戲狀態更新d
+    if ($d19c02f05dd65bd277596d0e0c45b7a2$var$isWalk) {
+      this.bg1.tilePositionX += 1 * $d19c02f05dd65bd277596d0e0c45b7a2$var$direction;
+      this.bg2.tilePositionX += 1.5 * $d19c02f05dd65bd277596d0e0c45b7a2$var$direction;
+      this.bg3.tilePositionX += 2 * $d19c02f05dd65bd277596d0e0c45b7a2$var$direction;
+      this.bg4.tilePositionX += 2.5 * $d19c02f05dd65bd277596d0e0c45b7a2$var$direction;
+      this.bg5.tilePositionX += 3 * $d19c02f05dd65bd277596d0e0c45b7a2$var$direction;
+      this.footer.tilePositionX += 4 * $d19c02f05dd65bd277596d0e0c45b7a2$var$direction;
+    }
+
+    var pointer = this.input.activePointer;
+    var vm = this;
+    this.input.on('pointerup', function (pointer) {
+      $d19c02f05dd65bd277596d0e0c45b7a2$var$lastTime = vm.time.now;
+    });
+
+    if ($d19c02f05dd65bd277596d0e0c45b7a2$var$TapState[2]) {
+      $d19c02f05dd65bd277596d0e0c45b7a2$var$KeyWalk(this);
+    } else {
+      if (pointer.isDown) {
+        if ($d19c02f05dd65bd277596d0e0c45b7a2$var$TapState[0]) {
+          $d19c02f05dd65bd277596d0e0c45b7a2$var$doubleTap(this);
+        }
+
+        if ($d19c02f05dd65bd277596d0e0c45b7a2$var$TapState[1]) $d19c02f05dd65bd277596d0e0c45b7a2$var$TapWalk(pointer, this);
+      } else {
+        this.player.setVelocityX(0);
+        $d19c02f05dd65bd277596d0e0c45b7a2$var$isWalk = true;
+        this.player.anims.play('walk', true);
+      }
+    }
+  }
+};
+
+function $d19c02f05dd65bd277596d0e0c45b7a2$var$hitSprite(player, sprite2) {
+  if ($d19c02f05dd65bd277596d0e0c45b7a2$var$inAir) {
+    $d19c02f05dd65bd277596d0e0c45b7a2$var$inAir = false;
+    player.anims.play('idle');
+  }
+}
+
+function $d19c02f05dd65bd277596d0e0c45b7a2$var$collectStar(player, star) {
+  star.disableBody(true, true);
+  $d19c02f05dd65bd277596d0e0c45b7a2$var$score += 10;
+  $d19c02f05dd65bd277596d0e0c45b7a2$var$scoreText.setText('Score: ' + $d19c02f05dd65bd277596d0e0c45b7a2$var$score);
+}
+
+function $d19c02f05dd65bd277596d0e0c45b7a2$var$doubleTap(vm) {
+  var delay = vm.time.now - $d19c02f05dd65bd277596d0e0c45b7a2$var$lastTime;
+
+  if (vm.player.body.touching.down) {
+    vm.player.setVelocityY(-430);
+    vm.player.setBounce(0.2);
+    vm.player.setTexture('jump', 0);
+  } // if (delay < 350) {
+  //   console.log('double', delay);
+  //   vm.player.setVelocityY(-630);
+  //   vm.player.setTexture('jump', 0);
+  //   lastTime = 0;
+  // }
+
+}
+
+function $d19c02f05dd65bd277596d0e0c45b7a2$var$TapWalk(pointer, vm) {
+  if (pointer.x > 300) {
+    vm.player.flipX = false;
+    vm.player.setVelocityX(160);
+    vm.player.anims.play('walk', true);
+  } else if (pointer.x < 300) {
+    vm.player.flipX = true;
+    vm.player.setVelocityX(-160);
+    vm.player.anims.play('walk', true);
+  }
+}
+
+function $d19c02f05dd65bd277596d0e0c45b7a2$var$KeyWalk(vm) {
+  vm.cursors = vm.input.keyboard.addKeys({
+    up: $d19c02f05dd65bd277596d0e0c45b7a2$import$Phaser.Input.Keyboard.KeyCodes.W,
+    down: $d19c02f05dd65bd277596d0e0c45b7a2$import$Phaser.Input.Keyboard.KeyCodes.S,
+    left: $d19c02f05dd65bd277596d0e0c45b7a2$import$Phaser.Input.Keyboard.KeyCodes.A,
+    right: $d19c02f05dd65bd277596d0e0c45b7a2$import$Phaser.Input.Keyboard.KeyCodes.D
+  });
+
+  if (vm.cursors.up.isDown && vm.player.body.touching.down) {
+    $d19c02f05dd65bd277596d0e0c45b7a2$var$inAir = true;
+    vm.player.setVelocityY(-630);
+    vm.player.setTexture('jump', 0);
+  }
+
+  if (vm.cursors.left.isDown) {
+    vm.player.setVelocityX(-160);
+    vm.player.flipX = true;
+
+    if ($d19c02f05dd65bd277596d0e0c45b7a2$var$inAir) {
+      vm.player.setTexture('jump', 0);
+    } else {
+      vm.player.anims.play('walk', true);
+    }
+
+    $d19c02f05dd65bd277596d0e0c45b7a2$var$isWalk = true;
+    $d19c02f05dd65bd277596d0e0c45b7a2$var$direction = -1;
+  } else if (vm.cursors.right.isDown) {
+    vm.player.setVelocityX(160);
+    vm.player.flipX = false;
+
+    if ($d19c02f05dd65bd277596d0e0c45b7a2$var$inAir) {
+      vm.player.setTexture('jump', 0);
+    } else {
+      vm.player.anims.play('walk', true);
+    }
+
+    $d19c02f05dd65bd277596d0e0c45b7a2$var$isWalk = true;
+    $d19c02f05dd65bd277596d0e0c45b7a2$var$direction = 1;
+  } else if (vm.cursors.down.isDown) {
+    vm.player.anims.play('idle', true);
+  } else {
+    $d19c02f05dd65bd277596d0e0c45b7a2$var$isWalk = false;
+    vm.player.setVelocityX(0);
+    vm.player.anims.play('idle', true);
+  }
+}
+
+$d19c02f05dd65bd277596d0e0c45b7a2$exports.default = $d19c02f05dd65bd277596d0e0c45b7a2$export$default;

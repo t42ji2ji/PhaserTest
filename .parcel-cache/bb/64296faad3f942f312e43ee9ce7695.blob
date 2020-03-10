@@ -1,0 +1,23 @@
+var $b9fe83387ba0ab8dbc657a4436ea1$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Renderer.WebGL
+ */
+$b9fe83387ba0ab8dbc657a4436ea1$exports = {
+  Utils: $parcel$require("508b9fe83387ba0ab8dbc657a4436ea1", "./Utils"),
+  WebGLPipeline: $parcel$require("508b9fe83387ba0ab8dbc657a4436ea1", "./WebGLPipeline"),
+  WebGLRenderer: $parcel$require("508b9fe83387ba0ab8dbc657a4436ea1", "./WebGLRenderer"),
+  Pipelines: $parcel$require("508b9fe83387ba0ab8dbc657a4436ea1", "./pipelines"),
+  // Constants
+  BYTE: 0,
+  SHORT: 1,
+  UNSIGNED_BYTE: 2,
+  UNSIGNED_SHORT: 3,
+  FLOAT: 4
+};

@@ -1,0 +1,39 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $b9b1829c57fbb8bee10a93f29e108c$var$Blitter = $parcel$require("83b9b1829c57fbb8bee10a93f29e108c", "./Blitter");
+var $b9b1829c57fbb8bee10a93f29e108c$var$BuildGameObject = $parcel$require("83b9b1829c57fbb8bee10a93f29e108c", "../BuildGameObject");
+var $b9b1829c57fbb8bee10a93f29e108c$var$GameObjectCreator = $parcel$require("83b9b1829c57fbb8bee10a93f29e108c", "../GameObjectCreator");
+var $b9b1829c57fbb8bee10a93f29e108c$var$GetAdvancedValue = $parcel$require("83b9b1829c57fbb8bee10a93f29e108c", "../../utils/object/GetAdvancedValue");
+/**
+ * Creates a new Blitter Game Object and returns it.
+ *
+ * Note: This method will only be available if the Blitter Game Object has been built into Phaser.
+ *
+ * @method Phaser.GameObjects.GameObjectCreator#blitter
+ * @since 3.0.0
+ *
+ * @param {object} config - The configuration object this Game Object will use to create itself.
+ * @param {boolean} [addToScene] - Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+ *
+ * @return {Phaser.GameObjects.Blitter} The Game Object that was created.
+ */
+
+$b9b1829c57fbb8bee10a93f29e108c$var$GameObjectCreator.register('blitter', function (config, addToScene) {
+  if (config === undefined) {
+    config = {};
+  }
+
+  var key = $b9b1829c57fbb8bee10a93f29e108c$var$GetAdvancedValue(config, 'key', null);
+  var frame = $b9b1829c57fbb8bee10a93f29e108c$var$GetAdvancedValue(config, 'frame', null);
+  var blitter = new $b9b1829c57fbb8bee10a93f29e108c$var$Blitter(this.scene, 0, 0, key, frame);
+
+  if (addToScene !== undefined) {
+    config.add = addToScene;
+  }
+
+  $b9b1829c57fbb8bee10a93f29e108c$var$BuildGameObject(this.scene, blitter, config);
+  return blitter;
+}); //  When registering a factory function 'this' refers to the GameObjectCreator context.

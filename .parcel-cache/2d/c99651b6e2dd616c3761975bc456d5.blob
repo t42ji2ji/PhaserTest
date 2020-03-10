@@ -1,0 +1,39 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $b972e2b9a41e9ab9896c74c751d4934$var$BuildGameObject = $parcel$require("1b972e2b9a41e9ab9896c74c751d4934", "../BuildGameObject");
+var $b972e2b9a41e9ab9896c74c751d4934$var$GameObjectCreator = $parcel$require("1b972e2b9a41e9ab9896c74c751d4934", "../GameObjectCreator");
+var $b972e2b9a41e9ab9896c74c751d4934$var$GetAdvancedValue = $parcel$require("1b972e2b9a41e9ab9896c74c751d4934", "../../utils/object/GetAdvancedValue");
+var $b972e2b9a41e9ab9896c74c751d4934$var$Image = $parcel$require("1b972e2b9a41e9ab9896c74c751d4934", "./Image");
+/**
+ * Creates a new Image Game Object and returns it.
+ *
+ * Note: This method will only be available if the Image Game Object has been built into Phaser.
+ *
+ * @method Phaser.GameObjects.GameObjectCreator#image
+ * @since 3.0.0
+ *
+ * @param {object} config - The configuration object this Game Object will use to create itself.
+ * @param {boolean} [addToScene] - Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+ *
+ * @return {Phaser.GameObjects.Image} The Game Object that was created.
+ */
+
+$b972e2b9a41e9ab9896c74c751d4934$var$GameObjectCreator.register('image', function (config, addToScene) {
+  if (config === undefined) {
+    config = {};
+  }
+
+  var key = $b972e2b9a41e9ab9896c74c751d4934$var$GetAdvancedValue(config, 'key', null);
+  var frame = $b972e2b9a41e9ab9896c74c751d4934$var$GetAdvancedValue(config, 'frame', null);
+  var image = new $b972e2b9a41e9ab9896c74c751d4934$var$Image(this.scene, 0, 0, key, frame);
+
+  if (addToScene !== undefined) {
+    config.add = addToScene;
+  }
+
+  $b972e2b9a41e9ab9896c74c751d4934$var$BuildGameObject(this.scene, image, config);
+  return image;
+}); //  When registering a factory function 'this' refers to the GameObjectCreator context.

@@ -1,0 +1,21 @@
+var $eead8063730693b977dcfe4d815007$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.DOM
+ */
+var $eead8063730693b977dcfe4d815007$var$Dom = {
+  AddToDOM: $parcel$require("04eead8063730693b977dcfe4d815007", "./AddToDOM"),
+  DOMContentLoaded: $parcel$require("04eead8063730693b977dcfe4d815007", "./DOMContentLoaded"),
+  GetScreenOrientation: $parcel$require("04eead8063730693b977dcfe4d815007", "./GetScreenOrientation"),
+  GetTarget: $parcel$require("04eead8063730693b977dcfe4d815007", "./GetTarget"),
+  ParseXML: $parcel$require("04eead8063730693b977dcfe4d815007", "./ParseXML"),
+  RemoveFromDOM: $parcel$require("04eead8063730693b977dcfe4d815007", "./RemoveFromDOM"),
+  RequestAnimationFrame: $parcel$require("04eead8063730693b977dcfe4d815007", "./RequestAnimationFrame")
+};
+$eead8063730693b977dcfe4d815007$exports = $eead8063730693b977dcfe4d815007$var$Dom;

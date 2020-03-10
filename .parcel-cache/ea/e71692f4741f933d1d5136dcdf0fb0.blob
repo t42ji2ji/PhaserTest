@@ -1,0 +1,26 @@
+var $aa2d3dc11ec87ce7515331ec7f991ce$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $aa2d3dc11ec87ce7515331ec7f991ce$var$CONST = $parcel$require("0aa2d3dc11ec87ce7515331ec7f991ce", "./const");
+var $aa2d3dc11ec87ce7515331ec7f991ce$var$Extend = $parcel$require("0aa2d3dc11ec87ce7515331ec7f991ce", "../utils/object/Extend");
+/**
+ * @namespace Phaser.Geom
+ */
+
+var $aa2d3dc11ec87ce7515331ec7f991ce$var$Geom = {
+  Circle: $parcel$require("0aa2d3dc11ec87ce7515331ec7f991ce", "./circle"),
+  Ellipse: $parcel$require("0aa2d3dc11ec87ce7515331ec7f991ce", "./ellipse"),
+  Intersects: $parcel$require("0aa2d3dc11ec87ce7515331ec7f991ce", "./intersects"),
+  Line: $parcel$require("0aa2d3dc11ec87ce7515331ec7f991ce", "./line"),
+  Point: $parcel$require("0aa2d3dc11ec87ce7515331ec7f991ce", "./point"),
+  Polygon: $parcel$require("0aa2d3dc11ec87ce7515331ec7f991ce", "./polygon"),
+  Rectangle: $parcel$require("0aa2d3dc11ec87ce7515331ec7f991ce", "./rectangle"),
+  Triangle: $parcel$require("0aa2d3dc11ec87ce7515331ec7f991ce", "./triangle")
+}; //   Merge in the consts
+
+$aa2d3dc11ec87ce7515331ec7f991ce$var$Geom = $aa2d3dc11ec87ce7515331ec7f991ce$var$Extend(false, $aa2d3dc11ec87ce7515331ec7f991ce$var$Geom, $aa2d3dc11ec87ce7515331ec7f991ce$var$CONST);
+$aa2d3dc11ec87ce7515331ec7f991ce$exports = $aa2d3dc11ec87ce7515331ec7f991ce$var$Geom;

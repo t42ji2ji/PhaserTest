@@ -1,0 +1,19 @@
+var $bc6f10fa89b063830d71ee0c67629$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Core
+ */
+$bc6f10fa89b063830d71ee0c67629$exports = {
+  Config: $parcel$require("957bc6f10fa89b063830d71ee0c67629", "./Config"),
+  CreateRenderer: $parcel$require("957bc6f10fa89b063830d71ee0c67629", "./CreateRenderer"),
+  DebugHeader: $parcel$require("957bc6f10fa89b063830d71ee0c67629", "./DebugHeader"),
+  Events: $parcel$require("957bc6f10fa89b063830d71ee0c67629", "./events"),
+  TimeStep: $parcel$require("957bc6f10fa89b063830d71ee0c67629", "./TimeStep"),
+  VisibilityHandler: $parcel$require("957bc6f10fa89b063830d71ee0c67629", "./VisibilityHandler")
+};

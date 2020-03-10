@@ -1,0 +1,14 @@
+var $cd064d361a298619d302de192db8dd4$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Events
+ */
+$cd064d361a298619d302de192db8dd4$exports = {
+  EventEmitter: $parcel$require("7cd064d361a298619d302de192db8dd4", "./EventEmitter")
+};

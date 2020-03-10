@@ -1,0 +1,26 @@
+var $ca2b27b53f21f987f218e947609b3b$exports = {};
+$parcel$require("48ca2b27b53f21f987f218e947609b3b", "phaser");
+$parcel$require("48ca2b27b53f21f987f218e947609b3b", "./scene/gameStart");
+
+function $ca2b27b53f21f987f218e947609b3b$export$aFunction() {
+  console.log('function test');
+}
+
+$ca2b27b53f21f987f218e947609b3b$exports.aFunction = $ca2b27b53f21f987f218e947609b3b$export$aFunction;
+var $ca2b27b53f21f987f218e947609b3b$var$config = {
+  type: $ca2b27b53f21f987f218e947609b3b$import$Phaser.AUTO,
+  width: 800,
+  height: 600,
+  parent: 'app',
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: {
+        y: 1000
+      },
+      debug: true
+    }
+  },
+  scene: [$ca2b27b53f21f987f218e947609b3b$import$gameStart]
+};
+var $ca2b27b53f21f987f218e947609b3b$var$game = new $ca2b27b53f21f987f218e947609b3b$import$Phaser.Game($ca2b27b53f21f987f218e947609b3b$var$config);

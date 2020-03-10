@@ -1,0 +1,16 @@
+var $ecc6a1b28f1c5e0bbf1b8d561208592$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Cache
+ */
+$ecc6a1b28f1c5e0bbf1b8d561208592$exports = {
+  BaseCache: $parcel$require("1ecc6a1b28f1c5e0bbf1b8d561208592", "./BaseCache"),
+  CacheManager: $parcel$require("1ecc6a1b28f1c5e0bbf1b8d561208592", "./CacheManager"),
+  Events: $parcel$require("1ecc6a1b28f1c5e0bbf1b8d561208592", "./events")
+};

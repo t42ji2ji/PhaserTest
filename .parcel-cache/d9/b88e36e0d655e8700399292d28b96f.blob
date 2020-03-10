@@ -1,0 +1,17 @@
+var $e5aacfa917b103e39b117a652c933bcd$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Input.Touch
+ */
+
+/* eslint-disable */
+$e5aacfa917b103e39b117a652c933bcd$exports = {
+  TouchManager: $parcel$require("e5aacfa917b103e39b117a652c933bcd", "./TouchManager")
+};
+/* eslint-enable */

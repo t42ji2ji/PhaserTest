@@ -1,0 +1,24 @@
+var $bc214f4f65908979d8542cb67c9c4c13$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $bc214f4f65908979d8542cb67c9c4c13$var$CONST = $parcel$require("bc214f4f65908979d8542cb67c9c4c13", "./tween/const");
+var $bc214f4f65908979d8542cb67c9c4c13$var$Extend = $parcel$require("bc214f4f65908979d8542cb67c9c4c13", "../utils/object/Extend");
+/**
+ * @namespace Phaser.Tweens
+ */
+
+var $bc214f4f65908979d8542cb67c9c4c13$var$Tweens = {
+  Builders: $parcel$require("bc214f4f65908979d8542cb67c9c4c13", "./builders"),
+  Events: $parcel$require("bc214f4f65908979d8542cb67c9c4c13", "./events"),
+  TweenManager: $parcel$require("bc214f4f65908979d8542cb67c9c4c13", "./TweenManager"),
+  Tween: $parcel$require("bc214f4f65908979d8542cb67c9c4c13", "./tween/Tween"),
+  TweenData: $parcel$require("bc214f4f65908979d8542cb67c9c4c13", "./tween/TweenData"),
+  Timeline: $parcel$require("bc214f4f65908979d8542cb67c9c4c13", "./Timeline")
+}; //   Merge in the consts
+
+$bc214f4f65908979d8542cb67c9c4c13$var$Tweens = $bc214f4f65908979d8542cb67c9c4c13$var$Extend(false, $bc214f4f65908979d8542cb67c9c4c13$var$Tweens, $bc214f4f65908979d8542cb67c9c4c13$var$CONST);
+$bc214f4f65908979d8542cb67c9c4c13$exports = $bc214f4f65908979d8542cb67c9c4c13$var$Tweens;

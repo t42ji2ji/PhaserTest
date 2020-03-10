@@ -1,0 +1,81 @@
+var $ee5748761a7ae2d54925d56e5f0331b1$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+$parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./polyfills");
+var $ee5748761a7ae2d54925d56e5f0331b1$var$CONST = $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./const");
+var $ee5748761a7ae2d54925d56e5f0331b1$var$Extend = $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./utils/object/Extend");
+/**
+ * @namespace Phaser
+ */
+
+var $ee5748761a7ae2d54925d56e5f0331b1$var$Phaser = {
+  Actions: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./actions"),
+  Animations: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./animations"),
+  BlendModes: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./renderer/BlendModes"),
+  Cache: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./cache"),
+  Cameras: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./cameras"),
+  Core: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./core"),
+  Class: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./utils/Class"),
+  Create: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./create"),
+  Curves: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./curves"),
+  Data: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./data"),
+  Display: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./display"),
+  DOM: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./dom"),
+  Events: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./events"),
+  Game: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./core/Game"),
+  GameObjects: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./gameobjects"),
+  Geom: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./geom"),
+  Input: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./input"),
+  Loader: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./loader"),
+  Math: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./math"),
+  Physics: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./physics"),
+  Plugins: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./plugins"),
+  Renderer: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./renderer"),
+  Scale: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./scale"),
+  ScaleModes: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./renderer/ScaleModes"),
+  Scene: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./scene/Scene"),
+  Scenes: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./scene"),
+  Structs: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./structs"),
+  Textures: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./textures"),
+  Tilemaps: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./tilemaps"),
+  Time: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./time"),
+  Tweens: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./tweens"),
+  Utils: $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./utils")
+}; //  Merge in the optional plugins
+
+if (typeof FEATURE_SOUND) {
+  $ee5748761a7ae2d54925d56e5f0331b1$var$Phaser.Sound = $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "./sound");
+}
+
+if (typeof PLUGIN_CAMERA3D) {
+  $ee5748761a7ae2d54925d56e5f0331b1$var$Phaser.Cameras.Sprite3D = $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "../plugins/camera3d/src");
+  $ee5748761a7ae2d54925d56e5f0331b1$var$Phaser.GameObjects.Sprite3D = $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "../plugins/camera3d/src/sprite3d/Sprite3D");
+  $ee5748761a7ae2d54925d56e5f0331b1$var$Phaser.GameObjects.Factories.Sprite3D = $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "../plugins/camera3d/src/sprite3d/Sprite3DFactory");
+  $ee5748761a7ae2d54925d56e5f0331b1$var$Phaser.GameObjects.Creators.Sprite3D = $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "../plugins/camera3d/src/sprite3d/Sprite3DCreator");
+}
+
+if (typeof PLUGIN_FBINSTANT) {
+  $ee5748761a7ae2d54925d56e5f0331b1$var$Phaser.FacebookInstantGamesPlugin = $parcel$require("ee5748761a7ae2d54925d56e5f0331b1", "../plugins/fbinstant/src/FacebookInstantGamesPlugin");
+} //   Merge in the consts
+
+
+$ee5748761a7ae2d54925d56e5f0331b1$var$Phaser = $ee5748761a7ae2d54925d56e5f0331b1$var$Extend(false, $ee5748761a7ae2d54925d56e5f0331b1$var$Phaser, $ee5748761a7ae2d54925d56e5f0331b1$var$CONST);
+/**
+ * The root types namespace.
+ * 
+ * @namespace Phaser.Types
+ * @since 3.17.0
+ */
+//  Export it
+
+$ee5748761a7ae2d54925d56e5f0331b1$exports = $ee5748761a7ae2d54925d56e5f0331b1$var$Phaser;
+$parcel$global.Phaser = $ee5748761a7ae2d54925d56e5f0331b1$var$Phaser;
+/*
+ * "Documentation is like pizza: when it is good, it is very, very good;
+ * and when it is bad, it is better than nothing."
+ *  -- Dick Brandon
+ */

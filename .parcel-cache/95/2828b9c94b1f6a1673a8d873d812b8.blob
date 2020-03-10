@@ -1,0 +1,35 @@
+var $e5962dc14f29716f588888b683f17ad$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.GameObjects.Components
+ */
+$e5962dc14f29716f588888b683f17ad$exports = {
+  Alpha: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Alpha"),
+  AlphaSingle: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./AlphaSingle"),
+  Animation: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Animation"),
+  BlendMode: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./BlendMode"),
+  ComputedSize: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./ComputedSize"),
+  Crop: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Crop"),
+  Depth: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Depth"),
+  Flip: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Flip"),
+  GetBounds: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./GetBounds"),
+  Mask: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Mask"),
+  Origin: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Origin"),
+  PathFollower: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./PathFollower"),
+  Pipeline: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Pipeline"),
+  ScrollFactor: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./ScrollFactor"),
+  Size: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Size"),
+  Texture: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Texture"),
+  TextureCrop: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./TextureCrop"),
+  Tint: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Tint"),
+  ToJSON: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./ToJSON"),
+  Transform: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Transform"),
+  TransformMatrix: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./TransformMatrix"),
+  Visible: $parcel$require("3e5962dc14f29716f588888b683f17ad", "./Visible")
+};

@@ -1,0 +1,37 @@
+var $cce5eb01723d2f1340541272b445faba$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $cce5eb01723d2f1340541272b445faba$var$CONST = $parcel$require("cce5eb01723d2f1340541272b445faba", "./const");
+var $cce5eb01723d2f1340541272b445faba$var$Extend = $parcel$require("cce5eb01723d2f1340541272b445faba", "../../utils/object/Extend");
+/**
+ * @callback ArcadePhysicsCallback
+ *
+ * @param {Phaser.GameObjects.GameObject} object1 - The first Body to separate.
+ * @param {Phaser.GameObjects.GameObject} object2 - The second Body to separate.
+ */
+
+/**
+ * @namespace Phaser.Physics.Arcade
+ */
+
+var $cce5eb01723d2f1340541272b445faba$var$Arcade = {
+  ArcadePhysics: $parcel$require("cce5eb01723d2f1340541272b445faba", "./ArcadePhysics"),
+  Body: $parcel$require("cce5eb01723d2f1340541272b445faba", "./Body"),
+  Collider: $parcel$require("cce5eb01723d2f1340541272b445faba", "./Collider"),
+  Components: $parcel$require("cce5eb01723d2f1340541272b445faba", "./components"),
+  Events: $parcel$require("cce5eb01723d2f1340541272b445faba", "./events"),
+  Factory: $parcel$require("cce5eb01723d2f1340541272b445faba", "./Factory"),
+  Group: $parcel$require("cce5eb01723d2f1340541272b445faba", "./PhysicsGroup"),
+  Image: $parcel$require("cce5eb01723d2f1340541272b445faba", "./ArcadeImage"),
+  Sprite: $parcel$require("cce5eb01723d2f1340541272b445faba", "./ArcadeSprite"),
+  StaticBody: $parcel$require("cce5eb01723d2f1340541272b445faba", "./StaticBody"),
+  StaticGroup: $parcel$require("cce5eb01723d2f1340541272b445faba", "./StaticPhysicsGroup"),
+  World: $parcel$require("cce5eb01723d2f1340541272b445faba", "./World")
+}; //   Merge in the consts
+
+$cce5eb01723d2f1340541272b445faba$var$Arcade = $cce5eb01723d2f1340541272b445faba$var$Extend(false, $cce5eb01723d2f1340541272b445faba$var$Arcade, $cce5eb01723d2f1340541272b445faba$var$CONST);
+$cce5eb01723d2f1340541272b445faba$exports = $cce5eb01723d2f1340541272b445faba$var$Arcade;

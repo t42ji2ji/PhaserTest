@@ -1,0 +1,24 @@
+var $e5ef5090bffb5a93c958863001a497f$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Physics.Matter
+ */
+$e5ef5090bffb5a93c958863001a497f$exports = {
+  BodyBounds: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./BodyBounds"),
+  Factory: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./Factory"),
+  Image: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./MatterImage"),
+  Matter: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./CustomMain"),
+  MatterPhysics: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./MatterPhysics"),
+  PolyDecomp: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./poly-decomp"),
+  Sprite: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./MatterSprite"),
+  TileBody: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./MatterTileBody"),
+  PhysicsEditorParser: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./PhysicsEditorParser"),
+  PhysicsJSONParser: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./PhysicsJSONParser"),
+  World: $parcel$require("3e5ef5090bffb5a93c958863001a497f", "./World")
+};

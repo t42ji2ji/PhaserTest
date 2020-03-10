@@ -1,0 +1,119 @@
+var $ed604848fce904d0b46fd73391eb03$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.GameObjects
+ */
+var $ed604848fce904d0b46fd73391eb03$var$GameObjects = {
+  Events: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./events"),
+  DisplayList: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./DisplayList"),
+  GameObjectCreator: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./GameObjectCreator"),
+  GameObjectFactory: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./GameObjectFactory"),
+  UpdateList: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./UpdateList"),
+  Components: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./components"),
+  BuildGameObject: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./BuildGameObject"),
+  BuildGameObjectAnimation: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./BuildGameObjectAnimation"),
+  GameObject: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./GameObject"),
+  BitmapText: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./bitmaptext/static/BitmapText"),
+  Blitter: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./blitter/Blitter"),
+  Container: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./container/Container"),
+  DOMElement: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./domelement/DOMElement"),
+  DynamicBitmapText: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./bitmaptext/dynamic/DynamicBitmapText"),
+  Extern: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./extern/Extern.js"),
+  Graphics: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./graphics/Graphics.js"),
+  Group: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./group/Group"),
+  Image: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./image/Image"),
+  Particles: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./particles"),
+  PathFollower: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./pathfollower/PathFollower"),
+  RenderTexture: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./rendertexture/RenderTexture"),
+  RetroFont: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./bitmaptext/RetroFont"),
+  Sprite: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./sprite/Sprite"),
+  Text: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./text/static/Text"),
+  TileSprite: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./tilesprite/TileSprite"),
+  Zone: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./zone/Zone"),
+  Video: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./video/Video"),
+  //  Shapes
+  Shape: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/Shape"),
+  Arc: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/arc/Arc"),
+  Curve: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/curve/Curve"),
+  Ellipse: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/ellipse/Ellipse"),
+  Grid: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/grid/Grid"),
+  IsoBox: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/isobox/IsoBox"),
+  IsoTriangle: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/isotriangle/IsoTriangle"),
+  Line: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/line/Line"),
+  Polygon: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/polygon/Polygon"),
+  Rectangle: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/rectangle/Rectangle"),
+  Star: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/star/Star"),
+  Triangle: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/triangle/Triangle"),
+  //  Game Object Factories
+  Factories: {
+    Blitter: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./blitter/BlitterFactory"),
+    Container: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./container/ContainerFactory"),
+    DOMElement: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./domelement/DOMElementFactory"),
+    DynamicBitmapText: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./bitmaptext/dynamic/DynamicBitmapTextFactory"),
+    Extern: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./extern/ExternFactory"),
+    Graphics: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./graphics/GraphicsFactory"),
+    Group: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./group/GroupFactory"),
+    Image: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./image/ImageFactory"),
+    Particles: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./particles/ParticleManagerFactory"),
+    PathFollower: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./pathfollower/PathFollowerFactory"),
+    RenderTexture: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./rendertexture/RenderTextureFactory"),
+    Sprite: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./sprite/SpriteFactory"),
+    StaticBitmapText: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./bitmaptext/static/BitmapTextFactory"),
+    Text: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./text/static/TextFactory"),
+    TileSprite: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./tilesprite/TileSpriteFactory"),
+    Zone: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./zone/ZoneFactory"),
+    Video: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./video/VideoFactory"),
+    //  Shapes
+    Arc: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/arc/ArcFactory"),
+    Curve: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/curve/CurveFactory"),
+    Ellipse: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/ellipse/EllipseFactory"),
+    Grid: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/grid/GridFactory"),
+    IsoBox: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/isobox/IsoBoxFactory"),
+    IsoTriangle: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/isotriangle/IsoTriangleFactory"),
+    Line: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/line/LineFactory"),
+    Polygon: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/polygon/PolygonFactory"),
+    Rectangle: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/rectangle/RectangleFactory"),
+    Star: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/star/StarFactory"),
+    Triangle: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shape/triangle/TriangleFactory")
+  },
+  Creators: {
+    Blitter: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./blitter/BlitterCreator"),
+    Container: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./container/ContainerCreator"),
+    DynamicBitmapText: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./bitmaptext/dynamic/DynamicBitmapTextCreator"),
+    Graphics: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./graphics/GraphicsCreator"),
+    Group: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./group/GroupCreator"),
+    Image: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./image/ImageCreator"),
+    Particles: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./particles/ParticleManagerCreator"),
+    RenderTexture: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./rendertexture/RenderTextureCreator"),
+    Sprite: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./sprite/SpriteCreator"),
+    StaticBitmapText: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./bitmaptext/static/BitmapTextCreator"),
+    Text: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./text/static/TextCreator"),
+    TileSprite: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./tilesprite/TileSpriteCreator"),
+    Zone: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./zone/ZoneCreator"),
+    Video: $parcel$require("78ed604848fce904d0b46fd73391eb03", "./video/VideoCreator")
+  }
+};
+
+if (typeof WEBGL_RENDERER) {
+  //  WebGL only Game Objects
+  $ed604848fce904d0b46fd73391eb03$var$GameObjects.Mesh = $parcel$require("78ed604848fce904d0b46fd73391eb03", "./mesh/Mesh");
+  $ed604848fce904d0b46fd73391eb03$var$GameObjects.Quad = $parcel$require("78ed604848fce904d0b46fd73391eb03", "./quad/Quad");
+  $ed604848fce904d0b46fd73391eb03$var$GameObjects.Shader = $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shader/Shader");
+  $ed604848fce904d0b46fd73391eb03$var$GameObjects.Factories.Mesh = $parcel$require("78ed604848fce904d0b46fd73391eb03", "./mesh/MeshFactory");
+  $ed604848fce904d0b46fd73391eb03$var$GameObjects.Factories.Quad = $parcel$require("78ed604848fce904d0b46fd73391eb03", "./quad/QuadFactory");
+  $ed604848fce904d0b46fd73391eb03$var$GameObjects.Factories.Shader = $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shader/ShaderFactory");
+  $ed604848fce904d0b46fd73391eb03$var$GameObjects.Creators.Mesh = $parcel$require("78ed604848fce904d0b46fd73391eb03", "./mesh/MeshCreator");
+  $ed604848fce904d0b46fd73391eb03$var$GameObjects.Creators.Quad = $parcel$require("78ed604848fce904d0b46fd73391eb03", "./quad/QuadCreator");
+  $ed604848fce904d0b46fd73391eb03$var$GameObjects.Creators.Shader = $parcel$require("78ed604848fce904d0b46fd73391eb03", "./shader/ShaderCreator");
+  $ed604848fce904d0b46fd73391eb03$var$GameObjects.Light = $parcel$require("78ed604848fce904d0b46fd73391eb03", "./lights/Light");
+  $parcel$require("78ed604848fce904d0b46fd73391eb03", "./lights/LightsManager");
+  $parcel$require("78ed604848fce904d0b46fd73391eb03", "./lights/LightsPlugin");
+}
+
+$ed604848fce904d0b46fd73391eb03$exports = $ed604848fce904d0b46fd73391eb03$var$GameObjects;

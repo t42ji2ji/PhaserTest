@@ -1,0 +1,73 @@
+var $dfd80d4ab9a19b1269b6319a7724e$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $dfd80d4ab9a19b1269b6319a7724e$var$CONST = $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./const");
+var $dfd80d4ab9a19b1269b6319a7724e$var$Extend = $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "../utils/object/Extend");
+/**
+ * @namespace Phaser.Math
+ */
+
+var $dfd80d4ab9a19b1269b6319a7724e$var$PhaserMath = {
+  //  Collections of functions
+  Angle: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./angle/"),
+  Distance: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./distance/"),
+  Easing: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./easing/"),
+  Fuzzy: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./fuzzy/"),
+  Interpolation: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./interpolation/"),
+  Pow2: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./pow2/"),
+  Snap: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./snap/"),
+  //  Expose the RNG Class
+  RandomDataGenerator: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./random-data-generator/RandomDataGenerator"),
+  //  Single functions
+  Average: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Average"),
+  Bernstein: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Bernstein"),
+  Between: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Between"),
+  CatmullRom: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./CatmullRom"),
+  CeilTo: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./CeilTo"),
+  Clamp: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Clamp"),
+  DegToRad: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./DegToRad"),
+  Difference: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Difference"),
+  Factorial: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Factorial"),
+  FloatBetween: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./FloatBetween"),
+  FloorTo: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./FloorTo"),
+  FromPercent: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./FromPercent"),
+  GetSpeed: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./GetSpeed"),
+  IsEven: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./IsEven"),
+  IsEvenStrict: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./IsEvenStrict"),
+  Linear: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Linear"),
+  MaxAdd: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./MaxAdd"),
+  MinSub: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./MinSub"),
+  Percent: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Percent"),
+  RadToDeg: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./RadToDeg"),
+  RandomXY: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./RandomXY"),
+  RandomXYZ: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./RandomXYZ"),
+  RandomXYZW: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./RandomXYZW"),
+  Rotate: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Rotate"),
+  RotateAround: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./RotateAround"),
+  RotateAroundDistance: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./RotateAroundDistance"),
+  RoundAwayFromZero: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./RoundAwayFromZero"),
+  RoundTo: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./RoundTo"),
+  SinCosTableGenerator: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./SinCosTableGenerator"),
+  SmootherStep: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./SmootherStep"),
+  SmoothStep: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./SmoothStep"),
+  ToXY: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./ToXY"),
+  TransformXY: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./TransformXY"),
+  Within: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Within"),
+  Wrap: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Wrap"),
+  //  Vector classes
+  Vector2: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Vector2"),
+  Vector3: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Vector3"),
+  Vector4: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Vector4"),
+  Matrix3: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Matrix3"),
+  Matrix4: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Matrix4"),
+  Quaternion: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./Quaternion"),
+  RotateVec3: $parcel$require("784dfd80d4ab9a19b1269b6319a7724e", "./RotateVec3")
+}; //   Merge in the consts
+
+$dfd80d4ab9a19b1269b6319a7724e$var$PhaserMath = $dfd80d4ab9a19b1269b6319a7724e$var$Extend(false, $dfd80d4ab9a19b1269b6319a7724e$var$PhaserMath, $dfd80d4ab9a19b1269b6319a7724e$var$CONST); //  Export it
+
+$dfd80d4ab9a19b1269b6319a7724e$exports = $dfd80d4ab9a19b1269b6319a7724e$var$PhaserMath;

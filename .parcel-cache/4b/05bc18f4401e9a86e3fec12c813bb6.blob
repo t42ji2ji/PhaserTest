@@ -1,0 +1,32 @@
+var $f967fdabb6036d39ad165fc599f82845$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Scenes.Events
+ */
+$f967fdabb6036d39ad165fc599f82845$exports = {
+  BOOT: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./BOOT_EVENT"),
+  CREATE: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./CREATE_EVENT"),
+  DESTROY: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./DESTROY_EVENT"),
+  PAUSE: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./PAUSE_EVENT"),
+  POST_UPDATE: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./POST_UPDATE_EVENT"),
+  PRE_UPDATE: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./PRE_UPDATE_EVENT"),
+  READY: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./READY_EVENT"),
+  RENDER: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./RENDER_EVENT"),
+  RESUME: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./RESUME_EVENT"),
+  SHUTDOWN: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./SHUTDOWN_EVENT"),
+  SLEEP: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./SLEEP_EVENT"),
+  START: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./START_EVENT"),
+  TRANSITION_COMPLETE: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./TRANSITION_COMPLETE_EVENT"),
+  TRANSITION_INIT: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./TRANSITION_INIT_EVENT"),
+  TRANSITION_OUT: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./TRANSITION_OUT_EVENT"),
+  TRANSITION_START: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./TRANSITION_START_EVENT"),
+  TRANSITION_WAKE: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./TRANSITION_WAKE_EVENT"),
+  UPDATE: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./UPDATE_EVENT"),
+  WAKE: $parcel$require("f967fdabb6036d39ad165fc599f82845", "./WAKE_EVENT")
+};

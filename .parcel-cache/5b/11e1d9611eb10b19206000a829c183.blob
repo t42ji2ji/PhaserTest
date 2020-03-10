@@ -1,0 +1,32 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $b7dfa88d3e8f939b32509d920923571$var$Zone = $parcel$require("2b7dfa88d3e8f939b32509d920923571", "./Zone");
+var $b7dfa88d3e8f939b32509d920923571$var$GameObjectFactory = $parcel$require("2b7dfa88d3e8f939b32509d920923571", "../GameObjectFactory");
+/**
+ * Creates a new Zone Game Object and adds it to the Scene.
+ *
+ * Note: This method will only be available if the Zone Game Object has been built into Phaser.
+ *
+ * @method Phaser.GameObjects.GameObjectFactory#zone
+ * @since 3.0.0
+ *
+ * @param {number} x - The horizontal position of this Game Object in the world.
+ * @param {number} y - The vertical position of this Game Object in the world.
+ * @param {number} width - The width of the Game Object.
+ * @param {number} height - The height of the Game Object.
+ * 
+ * @return {Phaser.GameObjects.Zone} The Game Object that was created.
+ */
+
+$b7dfa88d3e8f939b32509d920923571$var$GameObjectFactory.register('zone', function (x, y, width, height) {
+  return this.displayList.add(new $b7dfa88d3e8f939b32509d920923571$var$Zone(this.scene, x, y, width, height));
+}); //  When registering a factory function 'this' refers to the GameObjectFactory context.
+//  
+//  There are several properties available to use:
+//  
+//  this.scene - a reference to the Scene that owns the GameObjectFactory
+//  this.displayList - a reference to the Display List the Scene owns
+//  this.updateList - a reference to the Update List the Scene owns

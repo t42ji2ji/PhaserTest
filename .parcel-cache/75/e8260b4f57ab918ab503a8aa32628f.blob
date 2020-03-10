@@ -1,0 +1,19 @@
+var $b84973fa432bbfef12dd5b0117ec1c5$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Structs
+ */
+$b84973fa432bbfef12dd5b0117ec1c5$exports = {
+  List: $parcel$require("3b84973fa432bbfef12dd5b0117ec1c5", "./List"),
+  Map: $parcel$require("3b84973fa432bbfef12dd5b0117ec1c5", "./Map"),
+  ProcessQueue: $parcel$require("3b84973fa432bbfef12dd5b0117ec1c5", "./ProcessQueue"),
+  RTree: $parcel$require("3b84973fa432bbfef12dd5b0117ec1c5", "./RTree"),
+  Set: $parcel$require("3b84973fa432bbfef12dd5b0117ec1c5", "./Set"),
+  Size: $parcel$require("3b84973fa432bbfef12dd5b0117ec1c5", "./Size")
+};

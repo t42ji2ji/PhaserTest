@@ -1,0 +1,16 @@
+var $b15dfce4efd64f367c2bc8f22ef8a9b3$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Math.Pow2
+ */
+$b15dfce4efd64f367c2bc8f22ef8a9b3$exports = {
+  GetNext: $parcel$require("b15dfce4efd64f367c2bc8f22ef8a9b3", "./GetPowerOfTwo"),
+  IsSize: $parcel$require("b15dfce4efd64f367c2bc8f22ef8a9b3", "./IsSizePowerOfTwo"),
+  IsValue: $parcel$require("b15dfce4efd64f367c2bc8f22ef8a9b3", "./IsValuePowerOfTwo")
+};

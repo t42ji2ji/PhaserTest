@@ -1,0 +1,28 @@
+var $f5c525cfb707e7c2f98032c2e6d07fd2$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $f5c525cfb707e7c2f98032c2e6d07fd2$var$CONST = $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./const");
+var $f5c525cfb707e7c2f98032c2e6d07fd2$var$Extend = $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "../utils/object/Extend");
+/**
+ * @namespace Phaser.Input
+ */
+
+var $f5c525cfb707e7c2f98032c2e6d07fd2$var$Input = {
+  CreateInteractiveObject: $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./CreateInteractiveObject"),
+  Events: $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./events"),
+  Gamepad: $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./gamepad"),
+  InputManager: $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./InputManager"),
+  InputPlugin: $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./InputPlugin"),
+  InputPluginCache: $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./InputPluginCache"),
+  Keyboard: $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./keyboard"),
+  Mouse: $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./mouse"),
+  Pointer: $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./Pointer"),
+  Touch: $parcel$require("f5c525cfb707e7c2f98032c2e6d07fd2", "./touch")
+}; //   Merge in the consts
+
+$f5c525cfb707e7c2f98032c2e6d07fd2$var$Input = $f5c525cfb707e7c2f98032c2e6d07fd2$var$Extend(false, $f5c525cfb707e7c2f98032c2e6d07fd2$var$Input, $f5c525cfb707e7c2f98032c2e6d07fd2$var$CONST);
+$f5c525cfb707e7c2f98032c2e6d07fd2$exports = $f5c525cfb707e7c2f98032c2e6d07fd2$var$Input;

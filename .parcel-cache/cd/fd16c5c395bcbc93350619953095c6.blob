@@ -1,0 +1,65 @@
+var $e79bf37bbbb2c07ac541ac9d8c7d2942$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $e79bf37bbbb2c07ac541ac9d8c7d2942$var$CONST = $parcel$require("e79bf37bbbb2c07ac541ac9d8c7d2942", "./const");
+var $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue = $parcel$require("e79bf37bbbb2c07ac541ac9d8c7d2942", "../utils/object/GetValue");
+var $e79bf37bbbb2c07ac541ac9d8c7d2942$var$Merge = $parcel$require("e79bf37bbbb2c07ac541ac9d8c7d2942", "../utils/object/Merge");
+var $e79bf37bbbb2c07ac541ac9d8c7d2942$var$InjectionMap = $parcel$require("e79bf37bbbb2c07ac541ac9d8c7d2942", "./InjectionMap");
+/**
+ * @namespace Phaser.Scenes.Settings
+ */
+
+var $e79bf37bbbb2c07ac541ac9d8c7d2942$var$Settings = {
+  /**
+   * Takes a Scene configuration object and returns a fully formed System Settings object.
+   *
+   * @function Phaser.Scenes.Settings.create
+   * @since 3.0.0
+   *
+   * @param {(string|Phaser.Types.Scenes.SettingsConfig)} config - The Scene configuration object used to create this Scene Settings.
+   *
+   * @return {Phaser.Types.Scenes.SettingsObject} The Scene Settings object created as a result of the config and default settings.
+   */
+  create: function (config) {
+    if (typeof config === 'string') {
+      config = {
+        key: config
+      };
+    } else if (config === undefined) {
+      //  Pass the 'hasOwnProperty' checks
+      config = {};
+    }
+
+    return {
+      status: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$CONST.PENDING,
+      key: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'key', ''),
+      active: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'active', false),
+      visible: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'visible', true),
+      isBooted: false,
+      isTransition: false,
+      transitionFrom: null,
+      transitionDuration: 0,
+      transitionAllowInput: true,
+      //  Loader payload array
+      data: {},
+      pack: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'pack', false),
+      //  Cameras
+      cameras: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'cameras', null),
+      //  Scene Property Injection Map
+      map: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'map', $e79bf37bbbb2c07ac541ac9d8c7d2942$var$Merge($e79bf37bbbb2c07ac541ac9d8c7d2942$var$InjectionMap, $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'mapAdd', {}))),
+      //  Physics
+      physics: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'physics', {}),
+      //  Loader
+      loader: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'loader', {}),
+      //  Plugins
+      plugins: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'plugins', false),
+      //  Input
+      input: $e79bf37bbbb2c07ac541ac9d8c7d2942$var$GetValue(config, 'input', {})
+    };
+  }
+};
+$e79bf37bbbb2c07ac541ac9d8c7d2942$exports = $e79bf37bbbb2c07ac541ac9d8c7d2942$var$Settings;

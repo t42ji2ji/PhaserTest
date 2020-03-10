@@ -1,0 +1,24 @@
+var $c9e40bbae2e6c7c05ba582ffff029f11$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Math.Angle
+ */
+$c9e40bbae2e6c7c05ba582ffff029f11$exports = {
+  Between: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./Between"),
+  BetweenPoints: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./BetweenPoints"),
+  BetweenPointsY: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./BetweenPointsY"),
+  BetweenY: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./BetweenY"),
+  CounterClockwise: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./CounterClockwise"),
+  Normalize: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./Normalize"),
+  Reverse: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./Reverse"),
+  RotateTo: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./RotateTo"),
+  ShortestBetween: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./ShortestBetween"),
+  Wrap: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./Wrap"),
+  WrapDegrees: $parcel$require("c9e40bbae2e6c7c05ba582ffff029f11", "./WrapDegrees")
+};

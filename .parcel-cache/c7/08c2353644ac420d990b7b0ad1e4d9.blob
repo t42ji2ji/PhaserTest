@@ -1,0 +1,93 @@
+var $ad13d749c017dce642f75f62bbb89d69$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $ad13d749c017dce642f75f62bbb89d69$var$BlendModes = $parcel$require("ad13d749c017dce642f75f62bbb89d69", "../renderer/BlendModes");
+var $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue = $parcel$require("ad13d749c017dce642f75f62bbb89d69", "../utils/object/GetAdvancedValue");
+/**
+ * Builds a Game Object using the provided configuration object.
+ *
+ * @function Phaser.GameObjects.BuildGameObject
+ * @since 3.0.0
+ *
+ * @param {Phaser.Scene} scene - A reference to the Scene.
+ * @param {Phaser.GameObjects.GameObject} gameObject - The initial GameObject.
+ * @param {Phaser.Types.GameObjects.GameObjectConfig} config - The config to build the GameObject with.
+ *
+ * @return {Phaser.GameObjects.GameObject} The built Game Object.
+ */
+
+var $ad13d749c017dce642f75f62bbb89d69$var$BuildGameObject = function (scene, gameObject, config) {
+  //  Position
+  gameObject.x = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'x', 0);
+  gameObject.y = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'y', 0);
+  gameObject.depth = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'depth', 0); //  Flip
+
+  gameObject.flipX = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'flipX', false);
+  gameObject.flipY = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'flipY', false); //  Scale
+  //  Either: { scale: 2 } or { scale: { x: 2, y: 2 }}
+
+  var scale = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'scale', null);
+
+  if (typeof scale === 'number') {
+    gameObject.setScale(scale);
+  } else if (scale !== null) {
+    gameObject.scaleX = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(scale, 'x', 1);
+    gameObject.scaleY = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(scale, 'y', 1);
+  } //  ScrollFactor
+  //  Either: { scrollFactor: 2 } or { scrollFactor: { x: 2, y: 2 }}
+
+
+  var scrollFactor = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'scrollFactor', null);
+
+  if (typeof scrollFactor === 'number') {
+    gameObject.setScrollFactor(scrollFactor);
+  } else if (scrollFactor !== null) {
+    gameObject.scrollFactorX = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(scrollFactor, 'x', 1);
+    gameObject.scrollFactorY = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(scrollFactor, 'y', 1);
+  } //  Rotation
+
+
+  gameObject.rotation = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'rotation', 0);
+  var angle = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'angle', null);
+
+  if (angle !== null) {
+    gameObject.angle = angle;
+  } //  Alpha
+
+
+  gameObject.alpha = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'alpha', 1); //  Origin
+  //  Either: { origin: 0.5 } or { origin: { x: 0.5, y: 0.5 }}
+
+  var origin = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'origin', null);
+
+  if (typeof origin === 'number') {
+    gameObject.setOrigin(origin);
+  } else if (origin !== null) {
+    var ox = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(origin, 'x', 0.5);
+    var oy = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(origin, 'y', 0.5);
+    gameObject.setOrigin(ox, oy);
+  } //  BlendMode
+
+
+  gameObject.blendMode = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'blendMode', $ad13d749c017dce642f75f62bbb89d69$var$BlendModes.NORMAL); //  Visible
+
+  gameObject.visible = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'visible', true); //  Add to Scene
+
+  var add = $ad13d749c017dce642f75f62bbb89d69$var$GetAdvancedValue(config, 'add', true);
+
+  if (add) {
+    scene.sys.displayList.add(gameObject);
+  }
+
+  if (gameObject.preUpdate) {
+    scene.sys.updateList.add(gameObject);
+  }
+
+  return gameObject;
+};
+
+$ad13d749c017dce642f75f62bbb89d69$exports = $ad13d749c017dce642f75f62bbb89d69$var$BuildGameObject;

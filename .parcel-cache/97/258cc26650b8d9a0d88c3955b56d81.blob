@@ -1,0 +1,28 @@
+var $c3218cfaabaaea8ac8e65f663e8a5a2a$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Display.Bounds
+ */
+$c3218cfaabaaea8ac8e65f663e8a5a2a$exports = {
+  CenterOn: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./CenterOn"),
+  GetBottom: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./GetBottom"),
+  GetCenterX: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./GetCenterX"),
+  GetCenterY: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./GetCenterY"),
+  GetLeft: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./GetLeft"),
+  GetOffsetX: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./GetOffsetX"),
+  GetOffsetY: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./GetOffsetY"),
+  GetRight: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./GetRight"),
+  GetTop: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./GetTop"),
+  SetBottom: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./SetBottom"),
+  SetCenterX: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./SetCenterX"),
+  SetCenterY: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./SetCenterY"),
+  SetLeft: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./SetLeft"),
+  SetRight: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./SetRight"),
+  SetTop: $parcel$require("c3218cfaabaaea8ac8e65f663e8a5a2a", "./SetTop")
+};

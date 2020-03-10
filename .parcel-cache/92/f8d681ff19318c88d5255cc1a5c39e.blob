@@ -1,0 +1,36 @@
+var $a9cf770c6ab7996da2980$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * An Impact.js compatible physics world, body and solver, for those who are used
+ * to the Impact way of defining and controlling physics bodies. Also works with
+ * the new Loader support for Weltmeister map data.
+ *
+ * World updated to run off the Phaser main loop.
+ * Body extended to support additional setter functions.
+ *
+ * To create the map data you'll need Weltmeister, which comes with Impact
+ * and can be purchased from http://impactjs.com
+ *
+ * My thanks to Dominic Szablewski for his permission to support Impact in Phaser.
+ *
+ * @namespace Phaser.Physics.Impact
+ */
+$a9cf770c6ab7996da2980$exports = {
+  Body: $parcel$require("75611480299a9cf770c6ab7996da2980", "./Body"),
+  Events: $parcel$require("75611480299a9cf770c6ab7996da2980", "./events"),
+  COLLIDES: $parcel$require("75611480299a9cf770c6ab7996da2980", "./COLLIDES"),
+  CollisionMap: $parcel$require("75611480299a9cf770c6ab7996da2980", "./CollisionMap"),
+  Factory: $parcel$require("75611480299a9cf770c6ab7996da2980", "./Factory"),
+  Image: $parcel$require("75611480299a9cf770c6ab7996da2980", "./ImpactImage"),
+  ImpactBody: $parcel$require("75611480299a9cf770c6ab7996da2980", "./ImpactBody"),
+  ImpactPhysics: $parcel$require("75611480299a9cf770c6ab7996da2980", "./ImpactPhysics"),
+  Sprite: $parcel$require("75611480299a9cf770c6ab7996da2980", "./ImpactSprite"),
+  TYPE: $parcel$require("75611480299a9cf770c6ab7996da2980", "./TYPE"),
+  World: $parcel$require("75611480299a9cf770c6ab7996da2980", "./World")
+};

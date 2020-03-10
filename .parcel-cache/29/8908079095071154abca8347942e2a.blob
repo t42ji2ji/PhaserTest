@@ -1,0 +1,43 @@
+var $ace7c91c478fac5dd49b16847c10$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Loader.FileTypes
+ */
+$ace7c91c478fac5dd49b16847c10$exports = {
+  AnimationJSONFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./AnimationJSONFile"),
+  AtlasJSONFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./AtlasJSONFile"),
+  AtlasXMLFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./AtlasXMLFile"),
+  AudioFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./AudioFile"),
+  AudioSpriteFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./AudioSpriteFile"),
+  BinaryFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./BinaryFile"),
+  BitmapFontFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./BitmapFontFile"),
+  CSSFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./CSSFile"),
+  GLSLFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./GLSLFile"),
+  HTML5AudioFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./HTML5AudioFile"),
+  HTMLFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./HTMLFile"),
+  HTMLTextureFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./HTMLTextureFile"),
+  ImageFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./ImageFile"),
+  JSONFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./JSONFile"),
+  MultiAtlasFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./MultiAtlasFile"),
+  MultiScriptFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./MultiScriptFile"),
+  PackFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./PackFile"),
+  PluginFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./PluginFile"),
+  SceneFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./SceneFile"),
+  ScenePluginFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./ScenePluginFile"),
+  ScriptFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./ScriptFile"),
+  SpriteSheetFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./SpriteSheetFile"),
+  SVGFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./SVGFile"),
+  TextFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./TextFile"),
+  TilemapCSVFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./TilemapCSVFile"),
+  TilemapImpactFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./TilemapImpactFile"),
+  TilemapJSONFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./TilemapJSONFile"),
+  UnityAtlasFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./UnityAtlasFile"),
+  VideoFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./VideoFile"),
+  XMLFile: $parcel$require("2824ace7c91c478fac5dd49b16847c10", "./XMLFile")
+};

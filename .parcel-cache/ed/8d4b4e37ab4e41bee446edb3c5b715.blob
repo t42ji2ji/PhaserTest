@@ -1,0 +1,69 @@
+var $e2249c6401535774b8a7437c634c23$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $e2249c6401535774b8a7437c634c23$var$GetAdvancedValue = $parcel$require("85e2249c6401535774b8a7437c634c23", "../utils/object/GetAdvancedValue");
+/**
+ * Adds an Animation component to a Sprite and populates it based on the given config.
+ *
+ * @function Phaser.GameObjects.BuildGameObjectAnimation
+ * @since 3.0.0
+ *
+ * @param {Phaser.GameObjects.Sprite} sprite - The sprite to add an Animation component to.
+ * @param {object} config - The animation config.
+ *
+ * @return {Phaser.GameObjects.Sprite} The updated Sprite.
+ */
+
+var $e2249c6401535774b8a7437c634c23$var$BuildGameObjectAnimation = function (sprite, config) {
+  var animConfig = $e2249c6401535774b8a7437c634c23$var$GetAdvancedValue(config, 'anims', null);
+
+  if (animConfig === null) {
+    return sprite;
+  }
+
+  if (typeof animConfig === 'string') {
+    //  { anims: 'key' }
+    sprite.anims.play(animConfig);
+  } else if (typeof animConfig === 'object') {
+    //  { anims: {
+    //              key: string
+    //              startFrame: [string|integer]
+    //              delay: [float]
+    //              repeat: [integer]
+    //              repeatDelay: [float]
+    //              yoyo: [boolean]
+    //              play: [boolean]
+    //              delayedPlay: [boolean]
+    //           }
+    //  }
+    var anims = sprite.anims;
+    var key = $e2249c6401535774b8a7437c634c23$var$GetAdvancedValue(animConfig, 'key', undefined);
+    var startFrame = $e2249c6401535774b8a7437c634c23$var$GetAdvancedValue(animConfig, 'startFrame', undefined);
+    var delay = $e2249c6401535774b8a7437c634c23$var$GetAdvancedValue(animConfig, 'delay', 0);
+    var repeat = $e2249c6401535774b8a7437c634c23$var$GetAdvancedValue(animConfig, 'repeat', 0);
+    var repeatDelay = $e2249c6401535774b8a7437c634c23$var$GetAdvancedValue(animConfig, 'repeatDelay', 0);
+    var yoyo = $e2249c6401535774b8a7437c634c23$var$GetAdvancedValue(animConfig, 'yoyo', false);
+    var play = $e2249c6401535774b8a7437c634c23$var$GetAdvancedValue(animConfig, 'play', false);
+    var delayedPlay = $e2249c6401535774b8a7437c634c23$var$GetAdvancedValue(animConfig, 'delayedPlay', 0);
+    anims.setDelay(delay);
+    anims.setRepeat(repeat);
+    anims.setRepeatDelay(repeatDelay);
+    anims.setYoyo(yoyo);
+
+    if (play) {
+      anims.play(key, startFrame);
+    } else if (delayedPlay > 0) {
+      anims.delayedPlay(delayedPlay, key, startFrame);
+    } else {
+      anims.load(key);
+    }
+  }
+
+  return sprite;
+};
+
+$e2249c6401535774b8a7437c634c23$exports = $e2249c6401535774b8a7437c634c23$var$BuildGameObjectAnimation;

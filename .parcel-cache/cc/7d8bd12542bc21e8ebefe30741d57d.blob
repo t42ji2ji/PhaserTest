@@ -1,0 +1,41 @@
+var $ac4a857b6bc441ace5c01b$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $ac4a857b6bc441ace5c01b$var$HTML5AudioSoundManager = $parcel$require("9973435794ac4a857b6bc441ace5c01b", "./html5/HTML5AudioSoundManager");
+var $ac4a857b6bc441ace5c01b$var$NoAudioSoundManager = $parcel$require("9973435794ac4a857b6bc441ace5c01b", "./noaudio/NoAudioSoundManager");
+var $ac4a857b6bc441ace5c01b$var$WebAudioSoundManager = $parcel$require("9973435794ac4a857b6bc441ace5c01b", "./webaudio/WebAudioSoundManager");
+/**
+ * Creates a Web Audio, HTML5 Audio or No Audio Sound Manager based on config and device settings.
+ *
+ * Be aware of https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
+ *
+ * @function Phaser.Sound.SoundManagerCreator
+ * @since 3.0.0
+ *
+ * @param {Phaser.Game} game - Reference to the current game instance.
+ * 
+ * @return {(Phaser.Sound.HTML5AudioSoundManager|Phaser.Sound.WebAudioSoundManager|Phaser.Sound.NoAudioSoundManager)} The Sound Manager instance that was created.
+ */
+
+var $ac4a857b6bc441ace5c01b$var$SoundManagerCreator = {
+  create: function (game) {
+    var audioConfig = game.config.audio;
+    var deviceAudio = game.device.audio;
+
+    if (audioConfig && audioConfig.noAudio || !deviceAudio.webAudio && !deviceAudio.audioData) {
+      return new $ac4a857b6bc441ace5c01b$var$NoAudioSoundManager(game);
+    }
+
+    if (deviceAudio.webAudio && !(audioConfig && audioConfig.disableWebAudio)) {
+      return new $ac4a857b6bc441ace5c01b$var$WebAudioSoundManager(game);
+    }
+
+    return new $ac4a857b6bc441ace5c01b$var$HTML5AudioSoundManager(game);
+  }
+};
+$ac4a857b6bc441ace5c01b$exports = $ac4a857b6bc441ace5c01b$var$SoundManagerCreator;

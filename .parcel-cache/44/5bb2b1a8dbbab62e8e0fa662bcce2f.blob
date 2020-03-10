@@ -1,0 +1,24 @@
+var $c8ebcfe46be026e153517bf0e5240ef6$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.GameObjects.Events
+ */
+$c8ebcfe46be026e153517bf0e5240ef6$exports = {
+  DESTROY: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./DESTROY_EVENT"),
+  VIDEO_COMPLETE: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./VIDEO_COMPLETE_EVENT"),
+  VIDEO_CREATED: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./VIDEO_CREATED_EVENT"),
+  VIDEO_ERROR: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./VIDEO_ERROR_EVENT"),
+  VIDEO_LOOP: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./VIDEO_LOOP_EVENT"),
+  VIDEO_PLAY: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./VIDEO_PLAY_EVENT"),
+  VIDEO_SEEKED: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./VIDEO_SEEKED_EVENT"),
+  VIDEO_SEEKING: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./VIDEO_SEEKING_EVENT"),
+  VIDEO_STOP: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./VIDEO_STOP_EVENT"),
+  VIDEO_TIMEOUT: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./VIDEO_TIMEOUT_EVENT"),
+  VIDEO_UNLOCKED: $parcel$require("c8ebcfe46be026e153517bf0e5240ef6", "./VIDEO_UNLOCKED_EVENT")
+};

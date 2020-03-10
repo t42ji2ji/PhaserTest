@@ -1,0 +1,43 @@
+var $c1fed60f6fd305e6fa1d947ddb0e5c0c$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $c1fed60f6fd305e6fa1d947ddb0e5c0c$var$Extend = $parcel$require("c1fed60f6fd305e6fa1d947ddb0e5c0c", "../utils/object/Extend");
+var $c1fed60f6fd305e6fa1d947ddb0e5c0c$var$FilterMode = $parcel$require("c1fed60f6fd305e6fa1d947ddb0e5c0c", "./const");
+/**
+ * @namespace Phaser.Textures
+ */
+
+/**
+ * Linear filter type.
+ * 
+ * @name Phaser.Textures.LINEAR
+ * @type {integer}
+ * @const
+ * @since 3.0.0
+ */
+
+/**
+ * Nearest Neighbor filter type.
+ * 
+ * @name Phaser.Textures.NEAREST
+ * @type {integer}
+ * @const
+ * @since 3.0.0
+ */
+
+var $c1fed60f6fd305e6fa1d947ddb0e5c0c$var$Textures = {
+  CanvasTexture: $parcel$require("c1fed60f6fd305e6fa1d947ddb0e5c0c", "./CanvasTexture"),
+  Events: $parcel$require("c1fed60f6fd305e6fa1d947ddb0e5c0c", "./events"),
+  FilterMode: $c1fed60f6fd305e6fa1d947ddb0e5c0c$var$FilterMode,
+  Frame: $parcel$require("c1fed60f6fd305e6fa1d947ddb0e5c0c", "./Frame"),
+  Parsers: $parcel$require("c1fed60f6fd305e6fa1d947ddb0e5c0c", "./parsers"),
+  Texture: $parcel$require("c1fed60f6fd305e6fa1d947ddb0e5c0c", "./Texture"),
+  TextureManager: $parcel$require("c1fed60f6fd305e6fa1d947ddb0e5c0c", "./TextureManager"),
+  TextureSource: $parcel$require("c1fed60f6fd305e6fa1d947ddb0e5c0c", "./TextureSource")
+};
+$c1fed60f6fd305e6fa1d947ddb0e5c0c$var$Textures = $c1fed60f6fd305e6fa1d947ddb0e5c0c$var$Extend(false, $c1fed60f6fd305e6fa1d947ddb0e5c0c$var$Textures, $c1fed60f6fd305e6fa1d947ddb0e5c0c$var$FilterMode);
+$c1fed60f6fd305e6fa1d947ddb0e5c0c$exports = $c1fed60f6fd305e6fa1d947ddb0e5c0c$var$Textures;

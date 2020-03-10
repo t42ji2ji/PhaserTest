@@ -1,0 +1,20 @@
+var $a5253692c846036fe05141cd45325aec$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Math.Distance
+ */
+$a5253692c846036fe05141cd45325aec$exports = {
+  Between: $parcel$require("a5253692c846036fe05141cd45325aec", "./DistanceBetween"),
+  BetweenPoints: $parcel$require("a5253692c846036fe05141cd45325aec", "./DistanceBetweenPoints"),
+  BetweenPointsSquared: $parcel$require("a5253692c846036fe05141cd45325aec", "./DistanceBetweenPointsSquared"),
+  Chebyshev: $parcel$require("a5253692c846036fe05141cd45325aec", "./DistanceChebyshev"),
+  Power: $parcel$require("a5253692c846036fe05141cd45325aec", "./DistancePower"),
+  Snake: $parcel$require("a5253692c846036fe05141cd45325aec", "./DistanceSnake"),
+  Squared: $parcel$require("a5253692c846036fe05141cd45325aec", "./DistanceSquared")
+};

@@ -1,0 +1,26 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @author       Felipe Alfonso <@bitnenfer>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $e987c3841b350bd1ce50fdc41$var$Container = $parcel$require("5961366e987c3841b350bd1ce50fdc41", "./Container");
+var $e987c3841b350bd1ce50fdc41$var$GameObjectFactory = $parcel$require("5961366e987c3841b350bd1ce50fdc41", "../GameObjectFactory");
+/**
+ * Creates a new Container Game Object and adds it to the Scene.
+ *
+ * Note: This method will only be available if the Container Game Object has been built into Phaser.
+ *
+ * @method Phaser.GameObjects.GameObjectFactory#container
+ * @since 3.4.0
+ *
+ * @param {number} x - The horizontal position of this Game Object in the world.
+ * @param {number} y - The vertical position of this Game Object in the world.
+ * @param {Phaser.GameObjects.GameObject|Phaser.GameObjects.GameObject[]} [children] - An optional array of Game Objects to add to this Container.
+ *
+ * @return {Phaser.GameObjects.Container} The Game Object that was created.
+ */
+
+$e987c3841b350bd1ce50fdc41$var$GameObjectFactory.register('container', function (x, y, children) {
+  return this.displayList.add(new $e987c3841b350bd1ce50fdc41$var$Container(this.scene, x, y, children));
+});

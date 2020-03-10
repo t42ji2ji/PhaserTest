@@ -1,0 +1,23 @@
+var $c3b1c5495cc73b86a27a8115e2aa7beb$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $c3b1c5495cc73b86a27a8115e2aa7beb$var$CONST = $parcel$require("c3b1c5495cc73b86a27a8115e2aa7beb", "./const");
+var $c3b1c5495cc73b86a27a8115e2aa7beb$var$Extend = $parcel$require("c3b1c5495cc73b86a27a8115e2aa7beb", "../utils/object/Extend");
+/**
+ * @namespace Phaser.Scenes
+ */
+
+var $c3b1c5495cc73b86a27a8115e2aa7beb$var$Scene = {
+  Events: $parcel$require("c3b1c5495cc73b86a27a8115e2aa7beb", "./events"),
+  SceneManager: $parcel$require("c3b1c5495cc73b86a27a8115e2aa7beb", "./SceneManager"),
+  ScenePlugin: $parcel$require("c3b1c5495cc73b86a27a8115e2aa7beb", "./ScenePlugin"),
+  Settings: $parcel$require("c3b1c5495cc73b86a27a8115e2aa7beb", "./Settings"),
+  Systems: $parcel$require("c3b1c5495cc73b86a27a8115e2aa7beb", "./Systems")
+}; //   Merge in the consts
+
+$c3b1c5495cc73b86a27a8115e2aa7beb$var$Scene = $c3b1c5495cc73b86a27a8115e2aa7beb$var$Extend(false, $c3b1c5495cc73b86a27a8115e2aa7beb$var$Scene, $c3b1c5495cc73b86a27a8115e2aa7beb$var$CONST);
+$c3b1c5495cc73b86a27a8115e2aa7beb$exports = $c3b1c5495cc73b86a27a8115e2aa7beb$var$Scene;

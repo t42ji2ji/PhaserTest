@@ -1,0 +1,46 @@
+var $dd680cfaaf79023a9d642d68867e6668$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $dd680cfaaf79023a9d642d68867e6668$var$Rectangle = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Rectangle");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Area = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Area");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Ceil = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Ceil");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.CeilAll = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./CeilAll");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.CenterOn = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./CenterOn");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Clone = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Clone");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Contains = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Contains");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.ContainsPoint = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./ContainsPoint");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.ContainsRect = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./ContainsRect");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.CopyFrom = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./CopyFrom");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Decompose = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Decompose");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Equals = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Equals");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.FitInside = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./FitInside");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.FitOutside = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./FitOutside");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Floor = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Floor");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.FloorAll = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./FloorAll");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.FromPoints = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./FromPoints");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.GetAspectRatio = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./GetAspectRatio");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.GetCenter = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./GetCenter");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.GetPoint = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./GetPoint");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.GetPoints = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./GetPoints");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.GetSize = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./GetSize");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Inflate = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Inflate");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Intersection = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Intersection");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.MarchingAnts = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./MarchingAnts");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.MergePoints = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./MergePoints");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.MergeRect = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./MergeRect");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.MergeXY = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./MergeXY");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Offset = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Offset");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.OffsetPoint = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./OffsetPoint");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Overlaps = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Overlaps");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Perimeter = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Perimeter");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.PerimeterPoint = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./PerimeterPoint");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Random = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Random");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.RandomOutside = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./RandomOutside");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.SameDimensions = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./SameDimensions");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Scale = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Scale");
+$dd680cfaaf79023a9d642d68867e6668$var$Rectangle.Union = $parcel$require("dd680cfaaf79023a9d642d68867e6668", "./Union");
+$dd680cfaaf79023a9d642d68867e6668$exports = $dd680cfaaf79023a9d642d68867e6668$var$Rectangle;

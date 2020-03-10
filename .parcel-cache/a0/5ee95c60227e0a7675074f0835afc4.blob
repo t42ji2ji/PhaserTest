@@ -1,0 +1,16 @@
+var $eafb11ae26bf1326bddca757e44d6c5$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Renderer.Canvas
+ */
+$eafb11ae26bf1326bddca757e44d6c5$exports = {
+  CanvasRenderer: $parcel$require("9eafb11ae26bf1326bddca757e44d6c5", "./CanvasRenderer"),
+  GetBlendModes: $parcel$require("9eafb11ae26bf1326bddca757e44d6c5", "./utils/GetBlendModes"),
+  SetTransform: $parcel$require("9eafb11ae26bf1326bddca757e44d6c5", "./utils/SetTransform")
+};

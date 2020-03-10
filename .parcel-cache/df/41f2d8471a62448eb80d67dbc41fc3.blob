@@ -1,0 +1,16 @@
+var $e3b521599c6883bf25d4527fa772b78$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Math.Snap
+ */
+$e3b521599c6883bf25d4527fa772b78$exports = {
+  Ceil: $parcel$require("2e3b521599c6883bf25d4527fa772b78", "./SnapCeil"),
+  Floor: $parcel$require("2e3b521599c6883bf25d4527fa772b78", "./SnapFloor"),
+  To: $parcel$require("2e3b521599c6883bf25d4527fa772b78", "./SnapTo")
+};

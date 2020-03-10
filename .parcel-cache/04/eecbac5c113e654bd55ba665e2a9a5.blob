@@ -1,0 +1,16 @@
+var $dbaa0c4d794990e65f07ca73935f33b9$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Data
+ */
+$dbaa0c4d794990e65f07ca73935f33b9$exports = {
+  DataManager: $parcel$require("dbaa0c4d794990e65f07ca73935f33b9", "./DataManager"),
+  DataManagerPlugin: $parcel$require("dbaa0c4d794990e65f07ca73935f33b9", "./DataManagerPlugin"),
+  Events: $parcel$require("dbaa0c4d794990e65f07ca73935f33b9", "./events")
+};

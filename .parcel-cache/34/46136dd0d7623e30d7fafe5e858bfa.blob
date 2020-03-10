@@ -1,0 +1,66 @@
+var $b4af5a5e52faec0e14bb3bd1cfbcfbd7$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Actions
+ */
+$b4af5a5e52faec0e14bb3bd1cfbcfbd7$exports = {
+  AlignTo: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./AlignTo"),
+  Angle: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./Angle"),
+  Call: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./Call"),
+  GetFirst: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./GetFirst"),
+  GetLast: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./GetLast"),
+  GridAlign: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./GridAlign"),
+  IncAlpha: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./IncAlpha"),
+  IncX: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./IncX"),
+  IncXY: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./IncXY"),
+  IncY: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./IncY"),
+  PlaceOnCircle: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./PlaceOnCircle"),
+  PlaceOnEllipse: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./PlaceOnEllipse"),
+  PlaceOnLine: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./PlaceOnLine"),
+  PlaceOnRectangle: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./PlaceOnRectangle"),
+  PlaceOnTriangle: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./PlaceOnTriangle"),
+  PlayAnimation: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./PlayAnimation"),
+  PropertyValueInc: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./PropertyValueInc"),
+  PropertyValueSet: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./PropertyValueSet"),
+  RandomCircle: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./RandomCircle"),
+  RandomEllipse: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./RandomEllipse"),
+  RandomLine: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./RandomLine"),
+  RandomRectangle: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./RandomRectangle"),
+  RandomTriangle: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./RandomTriangle"),
+  Rotate: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./Rotate"),
+  RotateAround: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./RotateAround"),
+  RotateAroundDistance: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./RotateAroundDistance"),
+  ScaleX: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./ScaleX"),
+  ScaleXY: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./ScaleXY"),
+  ScaleY: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./ScaleY"),
+  SetAlpha: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetAlpha"),
+  SetBlendMode: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetBlendMode"),
+  SetDepth: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetDepth"),
+  SetHitArea: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetHitArea"),
+  SetOrigin: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetOrigin"),
+  SetRotation: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetRotation"),
+  SetScale: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetScale"),
+  SetScaleX: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetScaleX"),
+  SetScaleY: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetScaleY"),
+  SetScrollFactor: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetScrollFactor"),
+  SetScrollFactorX: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetScrollFactorX"),
+  SetScrollFactorY: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetScrollFactorY"),
+  SetTint: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetTint"),
+  SetVisible: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetVisible"),
+  SetX: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetX"),
+  SetXY: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetXY"),
+  SetY: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SetY"),
+  ShiftPosition: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./ShiftPosition"),
+  Shuffle: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./Shuffle"),
+  SmootherStep: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SmootherStep"),
+  SmoothStep: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./SmoothStep"),
+  Spread: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./Spread"),
+  ToggleVisible: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./ToggleVisible"),
+  WrapInRectangle: $parcel$require("b4af5a5e52faec0e14bb3bd1cfbcfbd7", "./WrapInRectangle")
+};

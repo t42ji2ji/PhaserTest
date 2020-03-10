@@ -1,0 +1,21 @@
+var $aea6541b7c65dd795947638ac3c4cee$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Textures.Parsers
+ */
+$aea6541b7c65dd795947638ac3c4cee$exports = {
+  AtlasXML: $parcel$require("8aea6541b7c65dd795947638ac3c4cee", "./AtlasXML"),
+  Canvas: $parcel$require("8aea6541b7c65dd795947638ac3c4cee", "./Canvas"),
+  Image: $parcel$require("8aea6541b7c65dd795947638ac3c4cee", "./Image"),
+  JSONArray: $parcel$require("8aea6541b7c65dd795947638ac3c4cee", "./JSONArray"),
+  JSONHash: $parcel$require("8aea6541b7c65dd795947638ac3c4cee", "./JSONHash"),
+  SpriteSheet: $parcel$require("8aea6541b7c65dd795947638ac3c4cee", "./SpriteSheet"),
+  SpriteSheetFromAtlas: $parcel$require("8aea6541b7c65dd795947638ac3c4cee", "./SpriteSheetFromAtlas"),
+  UnityYAML: $parcel$require("8aea6541b7c65dd795947638ac3c4cee", "./UnityYAML")
+};

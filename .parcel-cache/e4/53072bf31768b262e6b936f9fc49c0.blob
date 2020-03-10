@@ -1,0 +1,39 @@
+var $c9536097de84973250188b2105d70d2$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $c9536097de84973250188b2105d70d2$var$Extend = $parcel$require("4c9536097de84973250188b2105d70d2", "../utils/object/Extend");
+var $c9536097de84973250188b2105d70d2$var$XHRSettings = $parcel$require("4c9536097de84973250188b2105d70d2", "./XHRSettings");
+/**
+ * Takes two XHRSettings Objects and creates a new XHRSettings object from them.
+ *
+ * The new object is seeded by the values given in the global settings, but any setting in
+ * the local object overrides the global ones.
+ *
+ * @function Phaser.Loader.MergeXHRSettings
+ * @since 3.0.0
+ *
+ * @param {Phaser.Types.Loader.XHRSettingsObject} global - The global XHRSettings object.
+ * @param {Phaser.Types.Loader.XHRSettingsObject} local - The local XHRSettings object.
+ *
+ * @return {Phaser.Types.Loader.XHRSettingsObject} A newly formed XHRSettings object.
+ */
+
+var $c9536097de84973250188b2105d70d2$var$MergeXHRSettings = function (global, local) {
+  var output = global === undefined ? $c9536097de84973250188b2105d70d2$var$XHRSettings() : $c9536097de84973250188b2105d70d2$var$Extend({}, global);
+
+  if (local) {
+    for (var setting in local) {
+      if (local[setting] !== undefined) {
+        output[setting] = local[setting];
+      }
+    }
+  }
+
+  return output;
+};
+
+$c9536097de84973250188b2105d70d2$exports = $c9536097de84973250188b2105d70d2$var$MergeXHRSettings;

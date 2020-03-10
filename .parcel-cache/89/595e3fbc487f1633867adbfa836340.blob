@@ -1,0 +1,28 @@
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $f56fad42fed54db676e006de8ca12df$var$GameObjectCreator = $parcel$require("4f56fad42fed54db676e006de8ca12df", "../GameObjectCreator");
+var $f56fad42fed54db676e006de8ca12df$var$GetAdvancedValue = $parcel$require("4f56fad42fed54db676e006de8ca12df", "../../utils/object/GetAdvancedValue");
+var $f56fad42fed54db676e006de8ca12df$var$Zone = $parcel$require("4f56fad42fed54db676e006de8ca12df", "./Zone");
+/**
+ * Creates a new Zone Game Object and returns it.
+ *
+ * Note: This method will only be available if the Zone Game Object has been built into Phaser.
+ *
+ * @method Phaser.GameObjects.GameObjectCreator#zone
+ * @since 3.0.0
+ *
+ * @param {object} config - The configuration object this Game Object will use to create itself.
+ *
+ * @return {Phaser.GameObjects.Zone} The Game Object that was created.
+ */
+
+$f56fad42fed54db676e006de8ca12df$var$GameObjectCreator.register('zone', function (config) {
+  var x = $f56fad42fed54db676e006de8ca12df$var$GetAdvancedValue(config, 'x', 0);
+  var y = $f56fad42fed54db676e006de8ca12df$var$GetAdvancedValue(config, 'y', 0);
+  var width = $f56fad42fed54db676e006de8ca12df$var$GetAdvancedValue(config, 'width', 1);
+  var height = $f56fad42fed54db676e006de8ca12df$var$GetAdvancedValue(config, 'height', width);
+  return new $f56fad42fed54db676e006de8ca12df$var$Zone(this.scene, x, y, width, height);
+}); //  When registering a factory function 'this' refers to the GameObjectCreator context.

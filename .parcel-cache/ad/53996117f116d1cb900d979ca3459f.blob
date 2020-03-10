@@ -1,0 +1,20 @@
+var $b9d5b8bcf7bc85dd43d3ac$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $b9d5b8bcf7bc85dd43d3ac$var$RETRO_FONT_CONST = $parcel$require("9039494336b9d5b8bcf7bc85dd43d3ac", "./const");
+var $b9d5b8bcf7bc85dd43d3ac$var$Extend = $parcel$require("9039494336b9d5b8bcf7bc85dd43d3ac", "../../utils/object/Extend");
+/**
+ * @namespace Phaser.GameObjects.RetroFont
+ * @since 3.6.0
+ */
+
+var $b9d5b8bcf7bc85dd43d3ac$var$RetroFont = {
+  Parse: $parcel$require("9039494336b9d5b8bcf7bc85dd43d3ac", "./ParseRetroFont")
+}; //   Merge in the consts
+
+$b9d5b8bcf7bc85dd43d3ac$var$RetroFont = $b9d5b8bcf7bc85dd43d3ac$var$Extend(false, $b9d5b8bcf7bc85dd43d3ac$var$RetroFont, $b9d5b8bcf7bc85dd43d3ac$var$RETRO_FONT_CONST);
+$b9d5b8bcf7bc85dd43d3ac$exports = $b9d5b8bcf7bc85dd43d3ac$var$RetroFont;

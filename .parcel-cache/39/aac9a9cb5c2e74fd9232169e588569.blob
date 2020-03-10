@@ -1,0 +1,17 @@
+var $ea62132d4a822096e33a82aef6dee8a4$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Utils
+ */
+$ea62132d4a822096e33a82aef6dee8a4$exports = {
+  Array: $parcel$require("ea62132d4a822096e33a82aef6dee8a4", "./array/"),
+  Base64: $parcel$require("ea62132d4a822096e33a82aef6dee8a4", "./base64/"),
+  Objects: $parcel$require("ea62132d4a822096e33a82aef6dee8a4", "./object/"),
+  String: $parcel$require("ea62132d4a822096e33a82aef6dee8a4", "./string/")
+};

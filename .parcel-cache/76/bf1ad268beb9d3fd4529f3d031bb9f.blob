@@ -1,0 +1,20 @@
+var $ae111d423fb29e361b4ca75ea1f07e00$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Math.Interpolation
+ */
+$ae111d423fb29e361b4ca75ea1f07e00$exports = {
+  Bezier: $parcel$require("ae111d423fb29e361b4ca75ea1f07e00", "./BezierInterpolation"),
+  CatmullRom: $parcel$require("ae111d423fb29e361b4ca75ea1f07e00", "./CatmullRomInterpolation"),
+  CubicBezier: $parcel$require("ae111d423fb29e361b4ca75ea1f07e00", "./CubicBezierInterpolation"),
+  Linear: $parcel$require("ae111d423fb29e361b4ca75ea1f07e00", "./LinearInterpolation"),
+  QuadraticBezier: $parcel$require("ae111d423fb29e361b4ca75ea1f07e00", "./QuadraticBezierInterpolation"),
+  SmoothStep: $parcel$require("ae111d423fb29e361b4ca75ea1f07e00", "./SmoothStepInterpolation"),
+  SmootherStep: $parcel$require("ae111d423fb29e361b4ca75ea1f07e00", "./SmootherStepInterpolation")
+};

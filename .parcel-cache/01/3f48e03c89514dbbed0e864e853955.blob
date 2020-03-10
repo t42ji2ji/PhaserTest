@@ -1,0 +1,15 @@
+var $d8281f7afc0a321deeee0a3e44a7$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Display.Masks
+ */
+$d8281f7afc0a321deeee0a3e44a7$exports = {
+  BitmapMask: $parcel$require("5025d8281f7afc0a321deeee0a3e44a7", "./BitmapMask"),
+  GeometryMask: $parcel$require("5025d8281f7afc0a321deeee0a3e44a7", "./GeometryMask")
+};

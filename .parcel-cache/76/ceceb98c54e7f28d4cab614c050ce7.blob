@@ -1,0 +1,24 @@
+var $bd844aea5c7af8d973c5b11301d93f68$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @author       Pavle Goloskokovic <pgoloskokovic@gmail.com> (http://prunegames.com)
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Sound
+ */
+$bd844aea5c7af8d973c5b11301d93f68$exports = {
+  SoundManagerCreator: $parcel$require("bd844aea5c7af8d973c5b11301d93f68", "./SoundManagerCreator"),
+  Events: $parcel$require("bd844aea5c7af8d973c5b11301d93f68", "./events"),
+  BaseSound: $parcel$require("bd844aea5c7af8d973c5b11301d93f68", "./BaseSound"),
+  BaseSoundManager: $parcel$require("bd844aea5c7af8d973c5b11301d93f68", "./BaseSoundManager"),
+  WebAudioSound: $parcel$require("bd844aea5c7af8d973c5b11301d93f68", "./webaudio/WebAudioSound"),
+  WebAudioSoundManager: $parcel$require("bd844aea5c7af8d973c5b11301d93f68", "./webaudio/WebAudioSoundManager"),
+  HTML5AudioSound: $parcel$require("bd844aea5c7af8d973c5b11301d93f68", "./html5/HTML5AudioSound"),
+  HTML5AudioSoundManager: $parcel$require("bd844aea5c7af8d973c5b11301d93f68", "./html5/HTML5AudioSoundManager"),
+  NoAudioSound: $parcel$require("bd844aea5c7af8d973c5b11301d93f68", "./noaudio/NoAudioSound"),
+  NoAudioSoundManager: $parcel$require("bd844aea5c7af8d973c5b11301d93f68", "./noaudio/NoAudioSoundManager")
+};

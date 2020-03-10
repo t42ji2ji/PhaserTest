@@ -1,0 +1,23 @@
+var $e9837697917fb5588bc04d5e862ae8b$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Input.Keyboard
+ */
+$e9837697917fb5588bc04d5e862ae8b$exports = {
+  Events: $parcel$require("4e9837697917fb5588bc04d5e862ae8b", "./events"),
+  KeyboardManager: $parcel$require("4e9837697917fb5588bc04d5e862ae8b", "./KeyboardManager"),
+  KeyboardPlugin: $parcel$require("4e9837697917fb5588bc04d5e862ae8b", "./KeyboardPlugin"),
+  Key: $parcel$require("4e9837697917fb5588bc04d5e862ae8b", "./keys/Key"),
+  KeyCodes: $parcel$require("4e9837697917fb5588bc04d5e862ae8b", "./keys/KeyCodes"),
+  KeyCombo: $parcel$require("4e9837697917fb5588bc04d5e862ae8b", "./combo/KeyCombo"),
+  JustDown: $parcel$require("4e9837697917fb5588bc04d5e862ae8b", "./keys/JustDown"),
+  JustUp: $parcel$require("4e9837697917fb5588bc04d5e862ae8b", "./keys/JustUp"),
+  DownDuration: $parcel$require("4e9837697917fb5588bc04d5e862ae8b", "./keys/DownDuration"),
+  UpDuration: $parcel$require("4e9837697917fb5588bc04d5e862ae8b", "./keys/UpDuration")
+};

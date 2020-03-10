@@ -1,0 +1,20 @@
+var $f5f7c226c0bf912516dc4ae70$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+var $f5f7c226c0bf912516dc4ae70$var$CONST = $parcel$require("3887222f5f7c226c0bf912516dc4ae70", "./const");
+var $f5f7c226c0bf912516dc4ae70$var$Extend = $parcel$require("3887222f5f7c226c0bf912516dc4ae70", "../../utils/object/Extend");
+/**
+ * @namespace Phaser.Display.Align
+ */
+
+var $f5f7c226c0bf912516dc4ae70$var$Align = {
+  In: $parcel$require("3887222f5f7c226c0bf912516dc4ae70", "./in"),
+  To: $parcel$require("3887222f5f7c226c0bf912516dc4ae70", "./to")
+}; //   Merge in the consts
+
+$f5f7c226c0bf912516dc4ae70$var$Align = $f5f7c226c0bf912516dc4ae70$var$Extend(false, $f5f7c226c0bf912516dc4ae70$var$Align, $f5f7c226c0bf912516dc4ae70$var$CONST);
+$f5f7c226c0bf912516dc4ae70$exports = $f5f7c226c0bf912516dc4ae70$var$Align;

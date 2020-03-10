@@ -1,0 +1,27 @@
+var $cfc9f8916ec2233cd4789a4cdf$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Utils.Objects
+ */
+$cfc9f8916ec2233cd4789a4cdf$exports = {
+  Clone: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./Clone"),
+  Extend: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./Extend"),
+  GetAdvancedValue: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./GetAdvancedValue"),
+  GetFastValue: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./GetFastValue"),
+  GetMinMaxValue: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./GetMinMaxValue"),
+  GetValue: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./GetValue"),
+  HasAll: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./HasAll"),
+  HasAny: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./HasAny"),
+  HasValue: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./HasValue"),
+  IsPlainObject: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./IsPlainObject"),
+  Merge: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./Merge"),
+  MergeRight: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./MergeRight"),
+  Pick: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./Pick"),
+  SetValue: $parcel$require("684766cfc9f8916ec2233cd4789a4cdf", "./SetValue")
+};

@@ -1,0 +1,15 @@
+var $cff7963082bc508d431044dbebbe$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Time
+ */
+$cff7963082bc508d431044dbebbe$exports = {
+  Clock: $parcel$require("5285cff7963082bc508d431044dbebbe", "./Clock"),
+  TimerEvent: $parcel$require("5285cff7963082bc508d431044dbebbe", "./TimerEvent")
+};

@@ -1,0 +1,18 @@
+var $b241e8306c591233af680a5a8d709b85$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Textures.Events
+ */
+$b241e8306c591233af680a5a8d709b85$exports = {
+  ADD: $parcel$require("b241e8306c591233af680a5a8d709b85", "./ADD_EVENT"),
+  ERROR: $parcel$require("b241e8306c591233af680a5a8d709b85", "./ERROR_EVENT"),
+  LOAD: $parcel$require("b241e8306c591233af680a5a8d709b85", "./LOAD_EVENT"),
+  READY: $parcel$require("b241e8306c591233af680a5a8d709b85", "./READY_EVENT"),
+  REMOVE: $parcel$require("b241e8306c591233af680a5a8d709b85", "./REMOVE_EVENT")
+};

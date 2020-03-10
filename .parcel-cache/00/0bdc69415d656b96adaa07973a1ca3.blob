@@ -1,0 +1,15 @@
+var $b577ef88e19c947b7d7912f684ab0cb8$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Create
+ */
+$b577ef88e19c947b7d7912f684ab0cb8$exports = {
+  GenerateTexture: $parcel$require("b577ef88e19c947b7d7912f684ab0cb8", "./GenerateTexture"),
+  Palettes: $parcel$require("b577ef88e19c947b7d7912f684ab0cb8", "./palettes")
+};

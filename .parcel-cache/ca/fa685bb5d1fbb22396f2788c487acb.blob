@@ -1,0 +1,18 @@
+var $a807623085cc08a81eed3dab40632f46$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Utils.String
+ */
+$a807623085cc08a81eed3dab40632f46$exports = {
+  Format: $parcel$require("a807623085cc08a81eed3dab40632f46", "./Format"),
+  Pad: $parcel$require("a807623085cc08a81eed3dab40632f46", "./Pad"),
+  Reverse: $parcel$require("a807623085cc08a81eed3dab40632f46", "./Reverse"),
+  UppercaseFirst: $parcel$require("a807623085cc08a81eed3dab40632f46", "./UppercaseFirst"),
+  UUID: $parcel$require("a807623085cc08a81eed3dab40632f46", "./UUID")
+};

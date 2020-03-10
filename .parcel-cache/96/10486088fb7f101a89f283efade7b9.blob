@@ -1,0 +1,23 @@
+var $b65a1148ebf3fab96199333ff06$exports = {};
+
+/**
+ * @author       Richard Davey <rich@photonstorm.com>
+ * @copyright    2020 Photon Storm Ltd.
+ * @license      {@link https://opensource.org/licenses/MIT|MIT License}
+ */
+
+/**
+ * @namespace Phaser.Loader.Events
+ */
+$b65a1148ebf3fab96199333ff06$exports = {
+  ADD: $parcel$require("40775b65a1148ebf3fab96199333ff06", "./ADD_EVENT"),
+  COMPLETE: $parcel$require("40775b65a1148ebf3fab96199333ff06", "./COMPLETE_EVENT"),
+  FILE_COMPLETE: $parcel$require("40775b65a1148ebf3fab96199333ff06", "./FILE_COMPLETE_EVENT"),
+  FILE_KEY_COMPLETE: $parcel$require("40775b65a1148ebf3fab96199333ff06", "./FILE_KEY_COMPLETE_EVENT"),
+  FILE_LOAD_ERROR: $parcel$require("40775b65a1148ebf3fab96199333ff06", "./FILE_LOAD_ERROR_EVENT"),
+  FILE_LOAD: $parcel$require("40775b65a1148ebf3fab96199333ff06", "./FILE_LOAD_EVENT"),
+  FILE_PROGRESS: $parcel$require("40775b65a1148ebf3fab96199333ff06", "./FILE_PROGRESS_EVENT"),
+  POST_PROCESS: $parcel$require("40775b65a1148ebf3fab96199333ff06", "./POST_PROCESS_EVENT"),
+  PROGRESS: $parcel$require("40775b65a1148ebf3fab96199333ff06", "./PROGRESS_EVENT"),
+  START: $parcel$require("40775b65a1148ebf3fab96199333ff06", "./START_EVENT")
+};
