@@ -11,6 +11,6 @@
   "scripts": {
     "dev": "parcel src/index.pug",
     "devopen": "parcel src/index.pug --open 'google chrome'",
-    "build": "parcel build src/index.pug"
+    "build": "parcel build src/index.pug --public-url ./"
   }
 }
